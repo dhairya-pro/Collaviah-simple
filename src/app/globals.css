@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-pearl: #ffffff;
+  --color-champagne: #f6ede4;
+  --color-crimson: #b5124a;
+  --color-crimson-hover: #96103d;
+  --color-gold-antique: #b07a2e;
+  --color-gold-soft: #d4a94f;
+  --color-rich-black: #1a1a1a;
+  --color-charcoal: #4a4340;
+  --color-leaf-green: #2f5d3a;
+  --color-blush: #f6d9dd;
+}
+
+/* Essential Lenis Smooth Scroll rules */
+html.lenis, html.lenis-smooth {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+html {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6ede4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a94f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b07a2e;
+}
+
+/* No-scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Selection highlight in Champagne & Crimson */
+::selection {
+  background-color: #b5124a;
+  color: #ffffff;
+}
+
+/* Accessible focus styling */
+:focus-visible {
+  outline: 2px solid #b5124a;
+  outline-offset: 2px;
+}
+
+/* Custom cursor hide default cursor on fine pointers */
+@media (pointer: fine) {
+  body {
+    cursor: default;
+  }
+}
+
+/* Luxury Glassmorphism & Lighting Effects */
+.glass-luxury {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 204, 165, 0.5);
+}
+
+.glass-dark-luxury {
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 169, 79, 0.25);
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 24px 48px -12px rgba(26, 26, 26, 0.08), 0 4px 16px rgba(176, 122, 46, 0.04);
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(212, 169, 79, 0) 0%,
+    rgba(243, 229, 171, 0.6) 50%,
+    rgba(212, 169, 79, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 90" width="400" height="90">
+  <defs>
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#F3E5AB"/>
+      <stop offset="40%" stopColor="#D4AF37"/>
+      <stop offset="100%" stopColor="#AA771C"/>
+    </linearGradient>
+  </defs>
+  <text x="50%" y="45" text-anchor="middle" font-family="'Playfair Display', serif" font-size="42" font-weight="700" letter-spacing="6" fill="url(#logoGold)">COLLAVIAH</text>
+  <text x="50%" y="68" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="10" font-weight="600" letter-spacing="4" fill="#B07A2E">日本発 • VEGAN COLLAGEN</text>
+</svg>
+
