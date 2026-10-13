@@ -2,6 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
 
+  // Ensure fonts are optimized and fetched at build time, not runtime.
+  // This prevents failures on Render where Google Fonts may be unreachable
+  // during server startup.
+  optimizeFonts: true,
+
   images: {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60,

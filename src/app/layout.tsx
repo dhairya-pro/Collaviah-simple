@@ -16,12 +16,14 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: "swap",
+  preload: false,
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
   display: "swap",
+  preload: false,
 });
 
 const greatVibes = Great_Vibes({
@@ -29,6 +31,7 @@ const greatVibes = Great_Vibes({
   weight: "400",
   variable: "--font-great-vibes",
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
