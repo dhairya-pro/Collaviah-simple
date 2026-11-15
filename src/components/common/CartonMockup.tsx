@@ -37,7 +37,7 @@ export const CartonMockup: React.FC<CartonMockupProps> = ({
         >
           {Array.from({ length: totalCans }).map((_, idx) => {
             const isSecondHalf = activeFlavor === "mixed" && idx >= totalCans / 2;
-            const canFlavor = isSecondHalf ? "cranberry" : activeFlavor === "mixed" ? "strawberry-lime" : activeFlavor;
+            const canFlavor = isSecondHalf ? "lemon-lime" : activeFlavor === "mixed" ? "strawberry-lime" : activeFlavor;
             const isRed = canFlavor === "strawberry-lime";
 
             return (
@@ -49,18 +49,13 @@ export const CartonMockup: React.FC<CartonMockupProps> = ({
                   transitionDelay: `${idx * 10}ms`,
                 }}
               >
-                {/* Mini 2D slim can glyph */}
-                <div
-                  className={`w-5 sm:w-6 h-12 sm:h-14 rounded-full border border-white/60 shadow-md flex flex-col items-center justify-between py-1 transition-all duration-200 ${
-                    isRed
-                      ? "bg-gradient-to-b from-[#E63956] via-[#C41E3A] to-[#8E182D]"
-                      : "bg-gradient-to-b from-[#A8153A] via-[#8E1B3A] to-[#50091E]"
-                  }`}
-                >
-                  <div className="w-3.5 h-1 rounded-full bg-gradient-to-r from-gray-300 via-white to-gray-400" />
-                  <div className="w-2.5 h-0.5 bg-gold-soft opacity-80" />
-                  <div className="w-3.5 h-0.5 rounded-full bg-gray-400 opacity-60" />
-                </div>
+                {/* Mini Realistic Can */}
+                <img
+                  src={isRed ? "/images/can-strawberry-lime.png" : "/images/can-lemon-lime.png"}
+                  alt={canFlavor}
+                  className="w-5 sm:w-6.5 h-auto max-h-14 object-contain drop-shadow-md pointer-events-none select-none transition-transform duration-200"
+                  loading="lazy"
+                />
                 {/* Number index indicator */}
                 <span className="text-[9px] font-mono text-charcoal/60 mt-0.5 select-none opacity-0 group-hover:opacity-100 transition-opacity">
                   {idx + 1}

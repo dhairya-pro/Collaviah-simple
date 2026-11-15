@@ -124,14 +124,14 @@ export const WholesalePacksSection: React.FC = () => {
                       </button>
                       <button
                         type="button"
-                        onClick={() => handleFlavorChange(pack.id, "cranberry")}
+                        onClick={() => handleFlavorChange(pack.id, "lemon-lime")}
                         className={`py-1.5 px-2 rounded-lg text-[10px] font-semibold transition-all ${
-                          currentFlavor === "cranberry"
+                          currentFlavor === "lemon-lime"
                             ? "bg-white text-crimson shadow-sm"
                             : "text-charcoal hover:text-richBlack"
                         }`}
                       >
-                        Cranberry
+                        Lemon Lime
                       </button>
                       <button
                         type="button"

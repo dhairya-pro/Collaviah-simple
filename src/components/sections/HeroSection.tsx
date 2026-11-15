@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import { CanMockup } from "@/components/common/CanMockup";
+import { FlavorId } from "@/types";
 import {
   StrawberryVector,
   LimeSliceVector,
-  CranberryVector,
+  LemonLimeVector,
   BlushPetalVector,
   LeafVector,
   WaterDropletVector,
@@ -15,6 +16,7 @@ import { ArrowRight, Download, Sparkles, Volume2, VolumeX, ShieldCheck } from "l
 import Link from "next/link";
 
 export const HeroSection: React.FC = () => {
+  const [heroFlavor, setHeroFlavor] = useState<FlavorId>("strawberry-lime");
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const audioContextRef = useRef<AudioContext | null>(null);
   const audioSourceRef = useRef<AudioNode | null>(null);
@@ -159,7 +161,7 @@ export const HeroSection: React.FC = () => {
         className="absolute bottom-[20%] left-[8%] md:left-[14%] z-10 pointer-events-none hidden sm:block will-change-transform"
         style={{ x: cranX, y: cranY }}
       >
-        <CranberryVector className="w-14 h-14 md:w-18 md:h-18 drop-shadow-lg rotate-12" />
+        <LemonLimeVector className="w-14 h-14 md:w-18 md:h-18 drop-shadow-lg rotate-12" />
         <LeafVector className="w-10 h-10 absolute -top-3 -right-3 -rotate-45 opacity-80" />
       </motion.div>
 
@@ -224,19 +226,57 @@ export const HeroSection: React.FC = () => {
           Zero sugar, organic monk fruit sweetener, and crisp botanical effervescence—ready for premier retail shelves and hospitality menus.
         </p>
 
+        {/* Interactive Hero Flavor Switcher */}
+        <div className="mt-6 flex items-center gap-2 p-1.5 rounded-full bg-white/90 backdrop-blur-md border border-gold-champagne/80 shadow-sm z-30">
+          <button
+            type="button"
+            onClick={() => setHeroFlavor("strawberry-lime")}
+            className={`px-4 py-1.5 rounded-full text-xs font-sans uppercase font-bold tracking-luxury transition-all duration-300 flex items-center gap-1.5 ${
+              heroFlavor === "strawberry-lime"
+                ? "bg-crimson text-white shadow-md shadow-crimson/25"
+                : "text-charcoal hover:text-richBlack hover:bg-champagne-light"
+            }`}
+          >
+            <span>🍓</span>
+            <span>Strawberry Lime</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setHeroFlavor("lemon-lime")}
+            className={`px-4 py-1.5 rounded-full text-xs font-sans uppercase font-bold tracking-luxury transition-all duration-300 flex items-center gap-1.5 ${
+              heroFlavor === "lemon-lime"
+                ? "bg-[#C8B400] text-white shadow-md shadow-[#C8B400]/25"
+                : "text-charcoal hover:text-richBlack hover:bg-champagne-light"
+            }`}
+          >
+            <span>🍋</span>
+            <span>Lemon Lime</span>
+          </button>
+        </div>
+
         {/* CENTER FLOATING CAN */}
         <motion.div
           style={{ scale: canScale, y: canY, rotate: canRotate }}
-          className="my-5 sm:my-7 relative flex items-center justify-center will-change-transform"
+          className="my-4 sm:my-6 relative flex items-center justify-center will-change-transform"
         >
           <div className="w-48 sm:w-56 md:w-64 lg:w-70">
-            <CanMockup
-              flavor="strawberry-lime"
-              isFloating={true}
-              showDroplets={true}
-              glow={true}
-              interactiveTilt={false} // Disable heavy tilt to keep scrolling featherlight
-            />
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={heroFlavor}
+                initial={{ opacity: 0, scale: 0.92, y: 15 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.92, y: -15 }}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+              >
+                <CanMockup
+                  flavor={heroFlavor}
+                  isFloating={true}
+                  priority={true}
+                  glow={true}
+                  interactiveTilt={false}
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </motion.div>
 

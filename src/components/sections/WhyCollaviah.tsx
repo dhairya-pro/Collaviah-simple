@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CanMockup } from "@/components/common/CanMockup";
+import { FlavorId } from "@/types";
 import { Sparkles, Leaf, Ban, Flame, Check, ShieldCheck } from "lucide-react";
 
 interface FeatureCallout {
@@ -60,6 +61,7 @@ const FEATURES: FeatureCallout[] = [
 
 export const WhyCollaviah: React.FC = () => {
   const [activeFeatureId, setActiveFeatureId] = useState<string>("vegan-collagen");
+  const [whyFlavor, setWhyFlavor] = useState<FlavorId>("strawberry-lime");
 
   const activeFeature = FEATURES.find((f) => f.id === activeFeatureId) || FEATURES[0];
 
@@ -141,16 +143,51 @@ export const WhyCollaviah: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-88 h-88 rounded-full bg-gradient-to-tr from-blush via-gold-champagne/30 to-champagne/20 blur-3xl pointer-events-none" />
 
             <div className="w-56 relative transition-transform duration-500 hover:scale-105">
-              <CanMockup
-                flavor="strawberry-lime"
-                isFloating={false}
-                showDroplets={true}
-                glow={true}
-                interactiveTilt={true}
-              />
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={whyFlavor}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <CanMockup
+                    flavor={whyFlavor}
+                    isFloating={false}
+                    showDroplets={true}
+                    glow={true}
+                    interactiveTilt={true}
+                  />
+                </motion.div>
+              </AnimatePresence>
             </div>
 
-            <div className="mt-3 text-center">
+            <div className="mt-4 flex items-center gap-1.5 p-1 rounded-full bg-white/95 border border-gold-soft/50 shadow-sm z-30">
+              <button
+                type="button"
+                onClick={() => setWhyFlavor("strawberry-lime")}
+                className={`px-3 py-1 rounded-full text-[10px] font-sans uppercase font-bold tracking-luxury transition-all ${
+                  whyFlavor === "strawberry-lime"
+                    ? "bg-crimson text-white shadow-sm"
+                    : "text-charcoal hover:text-richBlack"
+                }`}
+              >
+                Strawberry
+              </button>
+              <button
+                type="button"
+                onClick={() => setWhyFlavor("lemon-lime")}
+                className={`px-3 py-1 rounded-full text-[10px] font-sans uppercase font-bold tracking-luxury transition-all ${
+                  whyFlavor === "lemon-lime"
+                    ? "bg-[#C8B400] text-white shadow-sm"
+                    : "text-charcoal hover:text-richBlack"
+                }`}
+              >
+                Lemon Lime
+              </button>
+            </div>
+
+            <div className="mt-2 text-center">
               <span className="px-3 py-1 rounded-full bg-white/90 border border-gold-soft/50 text-[10px] font-mono tracking-widest text-gold-antique uppercase font-bold shadow-sm">
                 FORMULATED IN OSAKA, JAPAN
               </span>
@@ -217,8 +254,32 @@ export const WhyCollaviah: React.FC = () => {
 
         {/* MOBILE / TABLET RESPONSIVE CARDS */}
         <div className="lg:hidden flex flex-col items-center gap-8">
-          <div className="w-52">
-            <CanMockup flavor="strawberry-lime" isFloating={true} showDroplets={true} />
+          <div className="w-52 flex flex-col items-center">
+            <CanMockup flavor={whyFlavor} isFloating={true} showDroplets={true} glow={true} />
+            <div className="mt-4 flex items-center gap-1.5 p-1 rounded-full bg-white/95 border border-gold-soft/50 shadow-sm">
+              <button
+                type="button"
+                onClick={() => setWhyFlavor("strawberry-lime")}
+                className={`px-3 py-1 rounded-full text-[10px] font-sans uppercase font-bold tracking-luxury transition-all ${
+                  whyFlavor === "strawberry-lime"
+                    ? "bg-crimson text-white shadow-sm"
+                    : "text-charcoal"
+                }`}
+              >
+                Strawberry
+              </button>
+              <button
+                type="button"
+                onClick={() => setWhyFlavor("lemon-lime")}
+                className={`px-3 py-1 rounded-full text-[10px] font-sans uppercase font-bold tracking-luxury transition-all ${
+                  whyFlavor === "lemon-lime"
+                    ? "bg-[#C8B400] text-white shadow-sm"
+                    : "text-charcoal"
+                }`}
+              >
+                Lemon Lime
+              </button>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">

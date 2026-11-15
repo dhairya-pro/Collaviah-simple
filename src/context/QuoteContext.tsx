@@ -33,7 +33,7 @@ export function QuoteProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<QuoteCartItem[]>([
     // Sensible B2B initial preset so the drawer and quote builder feel alive right away
     { packId: "pack-12", flavorId: "strawberry-lime", cartons: 8 },
-    { packId: "pack-12", flavorId: "cranberry", cartons: 8 },
+    { packId: "pack-12", flavorId: "lemon-lime", cartons: 8 },
   ]);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [lastAddedKey, setLastAddedKey] = useState<string | null>(null);

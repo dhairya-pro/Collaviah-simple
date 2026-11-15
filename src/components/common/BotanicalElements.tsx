@@ -78,42 +78,39 @@ export const LimeSliceVector = ({ className = "w-16 h-16" }: { className?: strin
   </svg>
 );
 
-export const CranberryVector = ({ className = "w-16 h-16" }: { className?: string }) => (
+export const LemonLimeVector = ({ className = "w-16 h-16" }: { className?: string }) => (
   <svg viewBox="0 0 100 100" fill="none" className={className}>
     <defs>
-      <radialGradient id="cranberryGrad1" cx="35%" cy="30%" r="65%">
-        <stop offset="0%" stopColor="#C41C48" />
-        <stop offset="60%" stopColor="#8E1B3A" />
-        <stop offset="100%" stopColor="#480A1A" />
+      <radialGradient id="lemonGrad" cx="35%" cy="30%" r="65%">
+        <stop offset="0%" stopColor="#F5E84A" />
+        <stop offset="60%" stopColor="#D4C200" />
+        <stop offset="100%" stopColor="#9A8A00" />
       </radialGradient>
-      <radialGradient id="cranberryGrad2" cx="35%" cy="30%" r="65%">
-        <stop offset="0%" stopColor="#E63956" />
-        <stop offset="65%" stopColor="#A8153A" />
-        <stop offset="100%" stopColor="#5A0D20" />
+      <radialGradient id="limeGrad" cx="35%" cy="30%" r="65%">
+        <stop offset="0%" stopColor="#8BE05A" />
+        <stop offset="65%" stopColor="#5AA028" />
+        <stop offset="100%" stopColor="#2F5D10" />
       </radialGradient>
-      <filter id="cranberryGlow" x="-20%" y="-20%" width="140%" height="140%">
-        <feDropShadow dx="0" dy="6" stdDeviation="6" floodColor="#8E1B3A" floodOpacity="0.3" />
+      <filter id="lemonLimeGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="6" stdDeviation="6" floodColor="#C8B400" floodOpacity="0.3" />
       </filter>
     </defs>
-    <g filter="url(#cranberryGlow)">
+    <g filter="url(#lemonLimeGlow)">
       {/* Stem & Leaves */}
-      <path d="M 48 35 Q 52 15 62 10" stroke="#3D5A2B" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M 58 16 C 72 10, 80 20, 68 28 C 58 24, 56 18, 58 16 Z" fill="#4C7836" />
-      <path d="M 44 20 C 30 14, 25 24, 38 30 Z" fill="#3D5A2B" />
+      <path d="M 50 32 Q 54 14 64 8" stroke="#3D5A2B" strokeWidth="2.5" strokeLinecap="round" />
+      <path d="M 60 14 C 74 8, 82 18, 70 26 C 60 22, 58 16, 60 14 Z" fill="#4C7836" />
+      <path d="M 46 18 C 32 12, 27 22, 40 28 Z" fill="#3D5A2B" />
 
-      {/* Cranberry 1 (back left) */}
-      <circle cx="34" cy="58" r="22" fill="url(#cranberryGrad1)" />
-      <ellipse cx="28" cy="48" rx="6" ry="3" fill="#FFFFFF" opacity="0.4" />
-      <circle cx="34" cy="74" r="3" fill="#3D0613" />
+      {/* Lemon (large, back) */}
+      <ellipse cx="38" cy="60" rx="26" ry="22" fill="url(#lemonGrad)" />
+      <ellipse cx="30" cy="50" rx="8" ry="4" fill="#FFFFFF" opacity="0.45" />
+      {/* Lemon tip */}
+      <ellipse cx="62" cy="62" rx="4" ry="3" fill="#C8B200" opacity="0.8" />
 
-      {/* Cranberry 2 (front right) */}
-      <circle cx="64" cy="52" r="26" fill="url(#cranberryGrad2)" />
-      <ellipse cx="56" cy="40" rx="8" ry="4" fill="#FFFFFF" opacity="0.5" />
-      <circle cx="68" cy="68" r="3.5" fill="#3D0613" />
-
-      {/* Cranberry 3 (bottom) */}
-      <circle cx="48" cy="74" r="18" fill="url(#cranberryGrad1)" />
-      <ellipse cx="44" cy="66" rx="5" ry="2.5" fill="#FFFFFF" opacity="0.4" />
+      {/* Lime (smaller, front right) */}
+      <circle cx="66" cy="52" r="18" fill="url(#limeGrad)" />
+      <ellipse cx="58" cy="44" rx="6" ry="3" fill="#FFFFFF" opacity="0.5" />
+      <circle cx="70" cy="64" r="2.5" fill="#2F5A10" />
     </g>
   </svg>
 );

@@ -8,7 +8,7 @@ import { CanMockup } from "@/components/common/CanMockup";
 import {
   StrawberryVector,
   LimeSliceVector,
-  CranberryVector,
+  LemonLimeVector,
   BlushPetalVector,
   LeafVector,
 } from "@/components/common/BotanicalElements";
@@ -29,7 +29,7 @@ export const FlavorsShowcase: React.FC = () => {
       className={`py-24 transition-colors duration-700 relative overflow-hidden ${
         isStrawberry
           ? "bg-gradient-to-b from-pearl via-[#FDECEF]/60 to-champagne-light"
-          : "bg-gradient-to-b from-pearl via-[#F8E9EE]/70 to-champagne-light"
+          : "bg-gradient-to-b from-pearl via-[#FAFCE8]/70 to-champagne-light"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -80,7 +80,7 @@ export const FlavorsShowcase: React.FC = () => {
               animate={{ scale: 1, opacity: 0.3 }}
               transition={{ duration: 0.8 }}
               className={`absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full blur-3xl pointer-events-none ${
-                isStrawberry ? "bg-flavor-strawberry/25" : "bg-flavor-cranberry/25"
+                isStrawberry ? "bg-flavor-strawberry/25" : "bg-[#C8B400]/25"
               }`}
             />
 
@@ -126,20 +126,20 @@ export const FlavorsShowcase: React.FC = () => {
                 </motion.div>
               ) : (
                 <motion.div
-                  key="cranberry-bursts"
+                  key="lemon-lime-bursts"
                   className="absolute inset-0 pointer-events-none"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                 >
-                  {/* Top Right Cranberries */}
+                  {/* Top Right Lemon Lime */}
                   <motion.div
                     className="absolute top-6 right-6 z-10"
                     initial={{ y: -60, scale: 0.4, rotate: -20 }}
                     animate={{ y: 0, scale: 1, rotate: 15 }}
                     transition={{ type: "spring", stiffness: 220, damping: 15 }}
                   >
-                    <CranberryVector className="w-22 h-22 drop-shadow-xl" />
+                    <LemonLimeVector className="w-22 h-22 drop-shadow-xl" />
                   </motion.div>
 
                   {/* Botanical Leaf Bottom Right */}

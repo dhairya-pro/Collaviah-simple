@@ -22,14 +22,14 @@ collaviah-simple/
 │   ├── images/
 │   │   ├── collaviah-logo.svg    # Official brand vector logo
 │   │   ├── can-strawberry-lime.svg # Vector fallback mockup for Strawberry Lime
-│   │   ├── can-cranberry.svg     # Vector fallback mockup for Cranberry
+│   │   ├── can-lemon-lime.svg    # Vector fallback mockup for Lemon Lime
 │   │   ├── pack-6.svg            # Carton mockup for Pack of 6
 │   │   ├── pack-12.svg           # Carton mockup for Pack of 12
 │   │   ├── pack-24.svg           # Carton mockup for Pack of 24
 │   │   ├── fruit/
 │   │   │   ├── strawberry.svg    # Strawberry vector illustration
 │   │   │   ├── lime.svg          # Lime slice vector illustration
-│   │   │   ├── cranberry.svg     # Cranberry cluster vector illustration
+│   │   │   ├── lemon-lime.svg    # Lemon & lime vector illustration
 │   │   │   └── monk-fruit.svg    # Luo Han Guo monk fruit illustration
 │   │   └── florals/
 │   │       └── petals.svg        # Sakura blush petal vector
@@ -114,7 +114,7 @@ collaviah-simple/
 - **Leaf Green** (`#2F5D3A`): Vegan certification, natural trust badges
 - **Blush Pink** (`#F6D9DD`): Card backgrounds, cherry blossom petals, subtle tints
 - **Strawberry Lime Accents**: `#D7263D` (Crimson Ruby) + `#9CC83C` (Sudachi Lime)
-- **Cranberry Accents**: `#8E1B3A` (Deep Nordic Red) + `#B07A2E` (Antique Gold)
+- **Lemon Lime Accents**: `#C8B400` (Golden Citrus) + `#9CC83C` (Lime Green)
 
 ### Typography
 - **Headings**: `Playfair Display` (next/font/google)
@@ -129,9 +129,9 @@ collaviah-simple/
 2. **Smooth Scroll**: Lenis integration synchronized with GSAP ScrollTrigger ticker.
 3. **Ambient Canvas Layer**: Real-time canvas rendering slow-drifting sakura petals, micro-bubbles, and twinkling gold dust specks. Density automatically adjusts on mobile and pauses on `prefers-reduced-motion`.
 4. **Custom Magnetic Cursor**: Gold dot with a smooth trailing spring ring that expands over cards and magnetically locks onto CTA buttons (desktop only).
-5. **Hero Parallax**: Large serif wordmark pinned behind the 250ml can. Parallax layers of strawberries, limes, cranberries, and blush petals shift with mouse movement on desktop and scroll depth.
+5. **Hero Parallax**: Large serif wordmark pinned behind the 250ml can. Parallax layers of strawberries, limes, lemons, and blush petals shift with mouse movement on desktop and scroll depth.
 6. **Why COLLAVIAH Connectors**: Centered can stage where 4 claim cards connect via animated SVG gold drawn lines (`pathLength` transition).
-7. **Flavors Showcase**: Split-screen flavor switcher. Switching between Strawberry Lime and Cranberry triggers an animated can slide, background gradient morph, and a physics-spring fruit burst.
+7. **Flavors Showcase**: Split-screen flavor switcher. Switching between Strawberry Lime and Lemon Lime triggers an animated can slide, background gradient morph, and a physics-spring fruit burst.
 8. **Wholesale Carton Grid**: Hovering or tapping a pack card (6, 12, or 24) reveals an animated grid of miniature 250ml cans populating the carton one by one.
 9. **B2B Quote Builder**: Live can-counter updating in real time, instant WhatsApp message link generator, and celebratory sakura petal confetti on submission.
 10. **Horizontal Scroll Gallery**: "Who We Serve" sector cards with subtle 3D hover tilt.
@@ -176,7 +176,7 @@ The application is built with photorealistic 2D vector components (`CanMockup.ts
 To replace them with your own high-resolution 3D renders or photography:
 1. Place your transparent PNG or WebP files in `public/images/`:
    - `public/images/can-strawberry-lime.png` (250ml slim can front render)
-   - `public/images/can-cranberry.png` (250ml slim can front render)
+   - `public/images/can-lemon-lime.png` (250ml slim can front render)
    - `public/images/pack-6.png`, `pack-12.png`, `pack-24.png` (Carton photography)
    - `public/images/fruit/` and `public/images/florals/`
 2. Update the `svgCanAsset` and `imageFallback` properties in `src/data/flavors.ts`.
@@ -222,7 +222,7 @@ All wholesale pack configurations are located in **`src/data/packs.ts`**:
 The following items are configured with clearly designated placeholders and should be updated with official client assets upon market launch:
 
 1. **High-Res Can & Carton Photography**:
-   - Transparent PNG / WebP cutouts for Strawberry Lime and Cranberry 250ml slim cans.
+   - Transparent PNG / WebP cutouts for Strawberry Lime and Lemon Lime 250ml slim cans.
    - Master carton photography for Packs of 6, 12, and 24.
 2. **Official Vector Logo SVG**:
    - Replace `/public/images/collaviah-logo.svg` with your finalized brand vector marks.

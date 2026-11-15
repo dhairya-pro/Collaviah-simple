@@ -156,18 +156,18 @@ export const Navbar: React.FC = () => {
                             </Link>
 
                             <Link
-                              href="/products/cranberry"
+                              href="/products/lemon-lime"
                               className="flex items-start gap-3 p-3 rounded-xl hover:bg-champagne-light transition-colors duration-150 group"
                             >
-                              <span className="mt-0.5 w-7 h-7 flex-shrink-0 flex items-center justify-center rounded-lg bg-blush text-flavor-cranberry text-sm">
-                                🫐
+                              <span className="mt-0.5 w-7 h-7 flex-shrink-0 flex items-center justify-center rounded-lg bg-blush text-flavor-lemon-lime text-sm">
+                                🍋
                               </span>
                               <div>
                                 <span className="text-xs font-serif font-bold text-richBlack group-hover:text-crimson block">
-                                  Cranberry
+                                  Lemon Lime
                                 </span>
                                 <span className="text-[10px] text-charcoal-muted leading-tight block mt-0.5">
-                                  Wild tart cranberry & ruby botanicals
+                                  Bright lemon zest & yuzu-lime freshness
                                 </span>
                               </div>
                             </Link>
@@ -346,12 +346,12 @@ export const Navbar: React.FC = () => {
                   </Link>
 
                   <Link
-                    href="/products/cranberry"
+                    href="/products/lemon-lime"
                     onClick={() => setIsMobileOpen(false)}
                     className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-charcoal hover:text-crimson hover:bg-champagne-light transition-colors"
                   >
-                    <span className="text-base">🫐</span>
-                    <span className="font-medium">Cranberry</span>
+                    <span className="text-base">🍋</span>
+                    <span className="font-medium">Lemon Lime</span>
                   </Link>
                 </div>
 

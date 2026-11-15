@@ -26,10 +26,10 @@ writeSvg('fruit/lime.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0
   <circle cx="50" cy="50" r="35" fill="#B5E052"/>
 </svg>`);
 
-// Cranberry
-writeSvg('fruit/cranberry.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <circle cx="40" cy="55" r="24" fill="#8E1B3A"/>
-  <circle cx="65" cy="50" r="28" fill="#C41C48"/>
+// Lemon Lime
+writeSvg('fruit/lemon-lime.svg', `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <ellipse cx="38" cy="60" rx="26" ry="22" fill="#D4C200"/>
+  <circle cx="66" cy="52" r="18" fill="#5AA028"/>
 </svg>`);
 
 // Monk fruit

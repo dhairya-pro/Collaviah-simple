@@ -163,6 +163,12 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                 <span>Vegan Bio-Peptides</span>
                 <span className="font-semibold text-leafGreen">{flavor.nutrition.collagen}</span>
               </div>
+              {flavor.nutrition.vitaminC && (
+                <div className="py-2.5 flex justify-between">
+                  <span>Vitamin C</span>
+                  <span className="font-semibold text-leafGreen">{flavor.nutrition.vitaminC}</span>
+                </div>
+              )}
               <div className="py-2.5 flex justify-between font-bold text-richBlack">
                 <span>Total Sugars</span>
                 <span className="text-crimson font-mono">{flavor.nutrition.sugar}</span>

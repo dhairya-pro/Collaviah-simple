@@ -25,7 +25,7 @@ export const WHOLESALE_PACKS: WholesalePack[] = [
       "Available in Single Flavor or 3+3 Mixed Variety Carton",
       "Individual can barcode (EAN-13) & master carton QR tracking",
     ],
-    recommendedFlavorMix: "Available in single flavor or 3x Strawberry Lime + 3x Cranberry split.",
+    recommendedFlavorMix: "Available in single flavor or 3x Strawberry Lime + 3x Lemon Lime split.",
   },
   {
     id: "pack-12",
@@ -51,7 +51,7 @@ export const WHOLESALE_PACKS: WholesalePack[] = [
       "High-speed POS scanning barcodes on all six faces",
       "Includes complimentary acrylic counter tent-card with QR tasting guide",
     ],
-    recommendedFlavorMix: "Available in single flavor or 6x Strawberry Lime + 6x Cranberry split.",
+    recommendedFlavorMix: "Available in single flavor or 6x Strawberry Lime + 6x Lemon Lime split.",
   },
   {
     id: "pack-24",
@@ -77,7 +77,7 @@ export const WHOLESALE_PACKS: WholesalePack[] = [
       "Best per-can wholesale margin profile for commercial resale",
       "Priority freight dispatch & designated wholesale relationship manager",
     ],
-    recommendedFlavorMix: "Available in single flavor or 12x Strawberry Lime + 12x Cranberry balanced case.",
+    recommendedFlavorMix: "Available in single flavor or 12x Strawberry Lime + 12x Lemon Lime balanced case.",
   },
 ];
 
@@ -176,7 +176,7 @@ export const WHOLESALE_TIMELINE = [
     title: "Sample Verification",
     duration: "1 - 3 Days Dispatch",
     description:
-      "Qualified buyers receive a curated tasting kit containing both Strawberry Lime and Cranberry cans to evaluate taste and shelf aesthetics.",
+      "Qualified buyers receive a curated tasting kit containing both Strawberry Lime and Lemon Lime cans to evaluate taste and shelf aesthetics.",
     highlight: "Free tasting kit for registered retail buyers",
   },
   {
@@ -208,7 +208,7 @@ export const FAQ_LIST: FAQItem[] = [
     category: "Ordering & MOQ",
     question: "Can we mix flavors within a single carton or order?",
     answer:
-      "Yes! We provide 50/50 split variety master cartons (e.g., 3 Strawberry Lime + 3 Cranberry in the 6-pack, or 12 + 12 in the 24-pack). You can also mix different single-flavor cartons freely to reach volume discount thresholds.",
+      "Yes! We provide 50/50 split variety master cartons (e.g., 3 Strawberry Lime + 3 Lemon Lime in the 6-pack, or 12 + 12 in the 24-pack). You can also mix different single-flavor cartons freely to reach volume discount thresholds.",
   },
   {
     category: "Product & Ingredients",

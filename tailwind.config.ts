@@ -44,7 +44,7 @@ const config: Config = {
         flavor: {
           strawberry: "#D7263D",
           lime: "#9CC83C",
-          cranberry: "#8E1B3A",
+          "lemon-lime": "#C8B400",
         },
       },
       fontFamily: {

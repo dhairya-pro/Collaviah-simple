@@ -1,4 +1,4 @@
-export type FlavorId = "strawberry-lime" | "cranberry";
+export type FlavorId = "strawberry-lime" | "lemon-lime";
 
 export interface Flavor {
   id: FlavorId;
@@ -27,6 +27,7 @@ export interface Flavor {
     fat: string;
     sodium: string;
     sweetener: string;
+    vitaminC?: string;
   };
   ingredients: string[];
   idealFor: string[];
