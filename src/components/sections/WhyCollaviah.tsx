@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CanMockup } from "@/components/common/CanMockup";
 import { FlavorId } from "@/types";
-import { Sparkles, Leaf, Ban, Flame, Check, ShieldCheck } from "lucide-react";
+import { Sparkles, Leaf, Ban, Flame, Check, ShieldCheck, Play } from "lucide-react";
+import Link from "next/link";
 
 interface FeatureCallout {
   id: string;
@@ -312,6 +313,19 @@ export const WhyCollaviah: React.FC = () => {
               );
             })}
           </div>
+        </div>
+
+        {/* Watch Brand Film Callout */}
+        <div className="mt-16 text-center">
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/90 hover:bg-white border border-gold-soft/60 hover:border-gold-soft text-richBlack text-xs font-sans uppercase font-bold tracking-luxury transition-all shadow-sm hover:scale-105 group"
+          >
+            <span className="w-6 h-6 rounded-full bg-crimson text-white flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Play className="w-3 h-3 fill-current ml-0.5" />
+            </span>
+            <span>Watch Osaka Bio-Fermentation Film</span>
+          </Link>
         </div>
       </div>
     </section>

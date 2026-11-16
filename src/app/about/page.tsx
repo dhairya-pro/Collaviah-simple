@@ -2,6 +2,7 @@ import React from "react";
 import { Sparkles, Leaf, ShieldCheck, RefreshCw, Award } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { MuxVideoPlayer } from "@/components/common/MuxVideoPlayer";
 
 export const metadata: Metadata = {
   title: "About COLLAVIAH | Japanese Bio-Fermented Vegan Collagen Innovation",
@@ -28,6 +29,27 @@ export default function AboutPage() {
             Founded with a singular conviction: the functional beauty beverages of tomorrow cannot rely on archaic animal extraction or compromise on metabolic purity.
           </p>
         </div>
+      </section>
+
+      {/* BRAND & SCIENCE VIDEO FILM */}
+      <section className="py-14 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-semibold block mb-2">
+            — THE OSAKA HERITAGE FILM —
+          </span>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-richBlack">
+            Watch the Bio-Fermentation Journey
+          </h2>
+          <p className="text-charcoal text-sm mt-2">
+            Step inside our Osaka research facility and witness how plant fermentation yields pure, bio-identical Type I & III collagen peptides.
+          </p>
+        </div>
+
+        <MuxVideoPlayer
+          playbackId="bA1rRLGvRCv3fQ4iGm01kX28oboqRujkBFJHIliNv802E"
+          title="COLLAVIAH | Bio-Fermented Vegan Collagen & Craft Formulation"
+          subtitle="Precision Japanese Biotechnology • Zero Sugar • Infinitely Recyclable Aluminum"
+        />
       </section>
 
       {/* STORY & SCIENCE GRID */}
