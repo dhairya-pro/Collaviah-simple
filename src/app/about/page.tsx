@@ -32,7 +32,7 @@ export default function AboutPage() {
       </section>
 
       {/* BRAND & SCIENCE VIDEO FILM */}
-      <section className="py-14 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="brand-film" className="py-14 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-semibold block mb-2">
             — THE OSAKA HERITAGE FILM —
@@ -46,7 +46,7 @@ export default function AboutPage() {
         </div>
 
         <MuxVideoPlayer
-          playbackId="bA1rRLGvRCv3fQ4iGm01kX28oboqRujkBFJHIliNv802E"
+          playbackId="IgJ9izC003MfbPdDPG7bjC02pkCem00P1nJRMZ4aSIZxnw"
           title="COLLAVIAH | Bio-Fermented Vegan Collagen & Craft Formulation"
           subtitle="Precision Japanese Biotechnology • Zero Sugar • Infinitely Recyclable Aluminum"
         />

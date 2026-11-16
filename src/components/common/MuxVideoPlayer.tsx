@@ -1,8 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
-import MuxPlayer from "@mux/mux-player-react";
-import { Play, Sparkles, ShieldCheck, Film } from "lucide-react";
+import dynamic from "next/dynamic";
+import { Sparkles, ShieldCheck, Film } from "lucide-react";
+
+const MuxPlayer = dynamic(() => import("@mux/mux-player-react"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full flex items-center justify-center bg-black/60 text-gold-soft text-xs font-mono">
+      Loading video stream...
+    </div>
+  ),
+});
 
 interface MuxVideoPlayerProps {
   playbackId?: string;
@@ -16,10 +25,10 @@ interface MuxVideoPlayerProps {
 }
 
 export const MuxVideoPlayer: React.FC<MuxVideoPlayerProps> = ({
-  playbackId = process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID || "bA1rRLGvRCv3fQ4iGm01kX28oboqRujkBFJHIliNv802E",
+  playbackId = process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID || "IgJ9izC003MfbPdDPG7bjC02pkCem00P1nJRMZ4aSIZxnw",
   title = "The COLLAVIAH Story & Biotechnology Innovation",
   subtitle = "Crafted in Osaka, Japan • Bio-Fermented Vegan Peptides",
-  poster = "/images/can-strawberry-lime.png",
+  poster = "https://image.mux.com/IgJ9izC003MfbPdDPG7bjC02pkCem00P1nJRMZ4aSIZxnw/thumbnail.jpg?time=1",
   className = "",
   autoPlay = false,
   loop = false,
