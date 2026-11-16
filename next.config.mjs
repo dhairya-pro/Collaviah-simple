@@ -2,10 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // Ensure fonts are optimized and fetched at build time, not runtime.
-  // This prevents failures on Render where Google Fonts may be unreachable
-  // during server startup.
-  optimizeFonts: true,
+  // Fonts are loaded via direct CDN link in layout.tsx, preventing
+  // network timeout failures in constrained build environments like Render.
+  optimizeFonts: false,
 
   images: {
     formats: ["image/avif", "image/webp"],

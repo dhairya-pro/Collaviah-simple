@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-great-vibes: 'Great Vibes', cursive;
   --color-pearl: #ffffff;
   --color-champagne: #f6ede4;
   --color-crimson: #b5124a;

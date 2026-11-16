@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Montserrat, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import { LenisProvider } from "@/components/motion/LenisProvider";
 import { CustomCursor } from "@/components/motion/CustomCursor";
@@ -11,28 +10,6 @@ import { Navbar } from "@/components/common/Navbar";
 import { Footer } from "@/components/common/Footer";
 import { QuoteDrawer } from "@/components/common/QuoteDrawer";
 import { QuoteProvider } from "@/context/QuoteContext";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-  preload: false,
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
-  preload: false,
-});
-
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-great-vibes",
-  display: "swap",
-  preload: false,
-});
 
 export const metadata: Metadata = {
   title: "COLLAVIAH | Premium Japan-Based Vegan Collagen Beverage (250ml Wholesale)",
@@ -85,11 +62,14 @@ export default function RootLayout({
   };
 
   return (
-    <html
-      lang="en"
-      className={`${playfair.variable} ${montserrat.variable} ${greatVibes.variable}`}
-    >
+    <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
