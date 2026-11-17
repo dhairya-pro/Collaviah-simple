@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Top Fast Action Bar for Wholesale Buyers */}
+        {/* Top Fast Action Bar for Commercial Buyers */}
         <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
             <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-gold-soft font-bold block">
@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
             </Link>
             <a
               href="/docs/collaviah-wholesale-catalogue.pdf"
-              download="COLLAVIAH-Wholesale-Catalogue.pdf"
+              download="COLLAVIAH-Catalogue.pdf"
               className="px-6 py-3 rounded-full bg-transparent hover:bg-white/10 text-white border border-white/30 text-xs font-bold uppercase tracking-luxury transition-all flex items-center gap-2"
             >
               <Download className="w-3.5 h-3.5" />
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[#DDD7D0] leading-relaxed max-w-sm">
-              Formulated and produced in Osaka, Japan. 2,500mg bio-fermented plant collagen per 250ml slim can with zero sugar and monk fruit sweetener. Shipped worldwide in cartons of 6, 12, and 24.
+              Formulated and produced in Osaka, Japan. 5,000mg bio-fermented plant collagen per 250ml slim can with zero sugar and monk fruit sweetener. Shipped worldwide in cartons of 6, 12, and 24.
             </p>
             <div className="space-y-1.5 text-xs text-[#C8C2BA]">
               <div className="flex items-start gap-2">
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-gold-soft flex-shrink-0" />
-                <span>Commercial Accounts: wholesale@collaviah.com</span>
+                <span>Commercial Accounts: orders@collaviah.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-gold-soft flex-shrink-0" />
@@ -85,10 +85,10 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Wholesale Portals */}
+          {/* Ordering Portals */}
           <div className="space-y-3">
             <h4 className="text-xs font-sans uppercase tracking-luxury text-gold-soft font-bold">
-              Wholesale Portals
+              Ordering Portals
             </h4>
             <ul className="space-y-2 text-xs text-[#DDD7D0]">
               <li>
@@ -98,11 +98,11 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/wholesale" className="hover:text-white transition-colors">
-                  Wholesale Packs (6, 12, 24)
+                  Carton Packs (6, 12, 24)
                 </Link>
               </li>
               <li>
-                <Link href="/wholesale#quote-builder" className="hover:text-white transition-colors">
+                <Link href="/#quote-builder" className="hover:text-white transition-colors">
                   B2B Quote Builder
                 </Link>
               </li>
@@ -152,7 +152,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/terms" className="hover:text-white transition-colors">
-                  B2B Wholesale Terms
+                  Commercial Terms
                 </Link>
               </li>
             </ul>

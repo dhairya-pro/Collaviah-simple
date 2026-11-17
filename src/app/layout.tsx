@@ -12,27 +12,27 @@ import { QuoteDrawer } from "@/components/common/QuoteDrawer";
 import { QuoteProvider } from "@/context/QuoteContext";
 
 export const metadata: Metadata = {
-  title: "COLLAVIAH | Vegan Collagen Beverage Made in Osaka (250ml Wholesale)",
+  title: "COLLAVIAH | Vegan Collagen Beverage Made in Osaka (250ml Slim Can)",
   description:
-    "Official B2B wholesale portal for COLLAVIAH. Premium vegan collagen beverage made in Osaka, Japan in 250ml slim cans. Zero sugar, monk fruit sweetener, low calories. Wholesale packs of 6, 12, and 24 for retailers, cafes, gyms, salons, hotels, and distributors.",
+    "Official B2B commercial portal for COLLAVIAH. Premium vegan collagen beverage made in Osaka, Japan in 250ml slim cans. Zero sugar, monk fruit sweetener, low calories. Carton packs of 6, 12, and 24 for retailers, cafes, gyms, salons, hotels, and distributors.",
   keywords: [
     "vegan collagen beverage",
     "Made in Osaka vegan collagen",
-    "wholesale collagen drink",
+    "commercial collagen drink",
     "B2B beverage supplier",
     "zero sugar functional drink",
     "monk fruit collagen",
-    "COLLAVIAH wholesale",
+    "COLLAVIAH Osaka",
     "250ml slim can beverage",
   ],
   authors: [{ name: "COLLAVIAH Japan Beverage Co." }],
   openGraph: {
     title: "COLLAVIAH | Vegan Collagen Beverage Made in Osaka",
     description:
-      "Official wholesale packs for commercial stockists, retailers, and hospitality. Made in Osaka, Japan.",
+      "Official carton packs for commercial stockists, retailers, and hospitality. Made in Osaka, Japan.",
     type: "website",
     locale: "en_US",
-    siteName: "COLLAVIAH Wholesale",
+    siteName: "COLLAVIAH",
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "COLLAVIAH",
-    description: "Premium vegan collagen functional beverages made in Osaka for B2B commercial wholesale.",
+    description: "Premium vegan collagen functional beverages made in Osaka for B2B commercial supply.",
     url: "https://collaviah.com",
     logo: "https://collaviah.com/images/collaviah-logo.svg",
     knowsAbout: [
@@ -55,8 +55,8 @@ export default function RootLayout({
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      contactType: "Wholesale & Commercial Sales Desk",
-      email: "wholesale@collaviah.com",
+      contactType: "Commercial Sales Desk",
+      email: "orders@collaviah.com",
       availableLanguage: ["English", "Japanese"],
     },
   };

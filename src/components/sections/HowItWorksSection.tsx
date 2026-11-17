@@ -23,7 +23,7 @@ export const HowItWorksSection: React.FC = () => {
             — STREAMLINED B2B ONBOARDING —
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-richBlack mt-2">
-            How Wholesale Works
+            How Ordering Works
           </h2>
           <p className="text-charcoal text-sm sm:text-base mt-3 leading-relaxed">
             From your initial carton configuration to scheduled warehouse freight delivery, we make commercial beverage procurement effortless.

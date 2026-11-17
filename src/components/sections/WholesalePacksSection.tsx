@@ -34,7 +34,7 @@ export const WholesalePacksSection: React.FC = () => {
   };
 
   return (
-    <section id="wholesale-packs" className="py-28 bg-pearl relative overflow-hidden">
+    <section id="packs" className="py-28 bg-pearl relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -42,7 +42,7 @@ export const WholesalePacksSection: React.FC = () => {
             — COMMERCIAL PACKAGING SPECIFICATIONS —
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-richBlack mt-2">
-            Wholesale Carton Formats
+            Carton Pack Formats
           </h2>
           <p className="text-charcoal text-sm sm:text-base mt-3 leading-relaxed">
             Engineered for optimal shelf presentation, refrigerated retail coolers, and high-density pallet transit. Hover to unbox each carton format and inspect can loading.
@@ -174,7 +174,7 @@ export const WholesalePacksSection: React.FC = () => {
                       <span className="font-mono text-richBlack">{pack.grossWeight}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-charcoal-muted">Wholesale Rate Tier:</span>
+                      <span className="text-charcoal-muted">Case Pricing Tier:</span>
                       <span className="text-leafGreen font-semibold">Commercial Scale</span>
                     </div>
                   </div>
@@ -232,7 +232,7 @@ export const WholesalePacksSection: React.FC = () => {
               <div className="relative h-60 w-full overflow-hidden">
                 <Image
                   src="/images/photos/cartons-stack.jpg"
-                  alt="COLLAVIAH master wholesale shipping cartons stacked in warehouse"
+                  alt="COLLAVIAH master shipping cartons stacked in warehouse"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"

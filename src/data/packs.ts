@@ -74,8 +74,8 @@ export const WHOLESALE_PACKS: WholesalePack[] = [
     features: [
       "Maximum pallet space density (120 cartons / 2,880 cans per pallet)",
       "Moisture-resistant reinforced kraft outer layer for cold-chain transit",
-      "Best per-can wholesale margin profile for commercial resale",
-      "Priority freight dispatch & designated wholesale relationship manager",
+      "Best per-can margin profile for commercial resale",
+      "Priority freight dispatch & designated commercial account manager",
     ],
     recommendedFlavorMix: "Available in single flavor or 12x Strawberry Lime + 12x Lemon Lime balanced case.",
   },
@@ -160,7 +160,7 @@ export const WHOLESALE_TIMELINE = [
     title: "Enquire & Configure",
     duration: "Under 2 Minutes",
     description:
-      "Select your desired pack sizes, flavors, and anticipated carton volumes using our interactive Wholesale Quote Builder.",
+      "Select your desired pack sizes, flavors, and anticipated carton volumes using our interactive Quote Builder.",
     highlight: "Custom carton mixes welcomed",
   },
   {
@@ -200,7 +200,7 @@ export const WHOLESALE_TIMELINE = [
 export const FAQ_LIST: FAQItem[] = [
   {
     category: "Ordering & MOQ",
-    question: "What is the Minimum Order Quantity (MOQ) for wholesale accounts?",
+    question: "What is the Minimum Order Quantity (MOQ) for commercial accounts?",
     answer:
       "Our MOQ depends on the carton format: 10 cartons for Pack of 6 (60 cans), 8 cartons for Pack of 12 (96 cans), and 5 cartons for Pack of 24 (120 cans). For first-time trial orders, we allow mixing packs to meet baseline case quantities.",
   },
@@ -226,19 +226,19 @@ export const FAQ_LIST: FAQItem[] = [
     category: "Shipping & Storage",
     question: "What are the storage requirements and ambient shelf life?",
     answer:
-      "COLLAVIAH cans are shelf-stable for 18 months at ambient warehouse temperatures (4°C to 22°C). While refrigeration is not required for storage, chilling the cans to 6°C - 8°C prior to service enhances their crisp, effervescent botanical profile.",
+      "COLLAVIAH cans are shelf-stable for 12 months at ambient warehouse temperatures (4°C to 22°C). While refrigeration is not required for storage, chilling the cans to 6°C - 8°C prior to service enhances their crisp, effervescent botanical profile.",
   },
   {
     category: "Shipping & Storage",
     question: "Do you supply retail point-of-sale (POS) display materials?",
     answer:
-      "Yes. Every wholesale customer has access to complimentary POS merchandising collateral, including acrylic counter-top tent cards, double-sided shelf-talkers, branded aluminum ice buckets for VIP lounges, and digital asset kits for online menus.",
+      "Yes. Every commercial partner has access to complimentary POS merchandising collateral, including acrylic counter-top tent cards, double-sided shelf-talkers, branded aluminum ice buckets for VIP lounges, and digital asset kits for online menus.",
   },
   {
     category: "Samples",
-    question: "How do I request a wholesale sampling kit before committing to a pallet?",
+    question: "How do I request a sample tasting kit before committing to a pallet?",
     answer:
-      "Simply complete the Wholesale Quote Builder on this site and check the 'Request Tasting Sample Kit' box. Our commercial accounts team will verify your business details and dispatch a complimentary 2-flavor sample box via expedited courier.",
+      "Simply complete the Quote Builder on this site and check the 'Request Tasting Sample Kit' box. Our commercial accounts team will verify your business details and dispatch a complimentary 2-flavor sample box via expedited courier.",
   },
 ];
 

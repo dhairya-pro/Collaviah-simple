@@ -21,7 +21,7 @@ const FEATURES: FeatureCallout[] = [
   {
     id: "vegan-collagen",
     title: "Bio-Fermented Plant Collagen",
-    lead: "2,500mg Peptides • Made in Osaka",
+    lead: "5,000mg Peptides • Made in Osaka",
     description:
       "Produced via plant fermentation in Osaka, Japan. Matches human Type I & III collagen amino acid ratios with zero animal or marine sourcing.",
     icon: <Leaf className="w-5 h-5 text-leafGreen" />,
@@ -53,7 +53,7 @@ const FEATURES: FeatureCallout[] = [
     title: "Ultra Low Calorie",
     lead: "Under 15 kcal per 250ml Can",
     description:
-      "Light functional beverage providing 2,500mg bio-peptides and 100% daily Vitamin C with under 15 calories per serving.",
+      "Light functional beverage providing 5,000mg bio-peptides and 100% daily Vitamin C with under 15 calories per serving.",
     icon: <Flame className="w-5 h-5 text-amber-600" />,
     position: "bottom-right",
     linePath: "M 690 480 C 600 480, 580 380, 540 360",
@@ -81,7 +81,7 @@ export const WhyCollaviah: React.FC = () => {
             Why COLLAVIAH Leads the Category
           </h2>
           <p className="text-charcoal text-sm sm:text-base mt-3 leading-relaxed">
-            Made in Osaka, Japan. 2,500mg plant collagen peptides formulated in 250ml slim cans with zero sugar and pure monk fruit sweetener. Available in cartons of 6, 12, and 24, with 18-month ambient shelf life and international export compliance.
+            Made in Osaka, Japan. 5,000mg plant collagen peptides formulated in 250ml slim cans with zero sugar and pure monk fruit sweetener. Available in cartons of 6, 12, and 24, with 12-month ambient shelf life and international export compliance.
           </p>
         </div>
 

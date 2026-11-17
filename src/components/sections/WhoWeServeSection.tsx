@@ -136,7 +136,7 @@ export const WhoWeServeSection: React.FC = () => {
                 </div>
 
                 <Link
-                  href="/wholesale#quote-builder"
+                  href="/#quote-builder"
                   className="p-2.5 rounded-full bg-champagne-light hover:bg-crimson hover:text-white text-richBlack transition-all group-hover:scale-105"
                   aria-label={`Configure quote for ${sector.title}`}
                 >

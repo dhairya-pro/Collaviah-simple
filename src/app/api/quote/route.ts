@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     const { items, totalCartons, totalCans } = body;
     const quoteRef = `CLV-${Date.now().toString().slice(-6)}`;
 
-    // Log the formal wholesale quote inquiry
+    // Log the formal quote inquiry
     console.log(`[COLLAVIAH B2B Quote Received] Ref: ${quoteRef}`, {
       buyer: validatedContact.data.fullName,
       business: validatedContact.data.businessName,
@@ -82,7 +82,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       quoteRef,
-      message: `Thank you, ${validatedContact.data.fullName}. Your wholesale quote request (#${quoteRef}) has been assigned to our commercial accounts desk.`,
+      message: `Thank you, ${validatedContact.data.fullName}. Your quote request (#${quoteRef}) has been assigned to our commercial accounts desk.`,
     });
   } catch (error) {
     console.error("Error processing quote request:", error);

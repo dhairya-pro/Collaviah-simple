@@ -16,7 +16,7 @@ export const quoteFormSchema = z.object({
     "Salon / Spa / Aesthetic Clinic",
     "Hotel / Hospitality / Minibar",
     "Corporate Gifting",
-    "Beverage Distributor / Wholesaler",
+    "Beverage Distributor / Stockist",
     "Other Commercial Buyer",
   ]),
   expectedMonthlyVolume: z.string().min(1, "Please select anticipated volume"),

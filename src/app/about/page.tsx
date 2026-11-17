@@ -83,7 +83,7 @@ export default function AboutPage() {
             <div className="relative h-64 w-full">
               <Image
                 src="/images/photos/cartons-stack.jpg"
-                alt="Wholesale corrugated master cartons for export"
+                alt="Reinforced corrugated master cartons for export"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover"
@@ -146,10 +146,10 @@ export default function AboutPage() {
 
             <div className="p-5 rounded-2xl bg-champagne-light border border-gold-champagne/60 space-y-2">
               <h4 className="font-serif font-bold text-richBlack text-base">
-                The 2,500mg Daily Potency
+                The 5,000mg Daily Potency
               </h4>
               <p className="text-xs text-charcoal leading-relaxed">
-                Each 250ml slim can supplies 2,500mg of bio-identical peptides—the clinically recognized daily baseline for supporting dermal hydration, cellular elasticity, and hair keratin synthesis.
+                Each 250ml slim can supplies 5,000mg of bio-identical peptides—the clinically recognized daily baseline for supporting dermal hydration, cellular elasticity, and hair keratin synthesis.
               </p>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* B2B WHOLESALE PARTNER PLEDGE */}
+      {/* B2B COMMERCIAL PARTNER PLEDGE */}
       <section className="py-16 bg-champagne-light/50 border-y border-gold-champagne/40">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6">
           <Award className="w-10 h-10 text-gold-soft mx-auto" />
@@ -206,10 +206,10 @@ export default function AboutPage() {
           </p>
           <div className="pt-4">
             <Link
-              href="/wholesale#quote-builder"
+              href="/#quote-builder"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs font-sans uppercase font-bold tracking-luxury transition shadow-md shadow-crimson/25 hover:scale-105"
             >
-              <span>Explore Wholesale Partnership</span>
+              <span>Explore Commercial Partnership</span>
             </Link>
           </div>
         </div>

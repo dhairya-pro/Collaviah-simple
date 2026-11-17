@@ -119,13 +119,13 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               </div>
             </div>
 
-            {/* Quick Action to Wholesale */}
+            {/* Quick Action */}
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <Link
-                href={`/wholesale#quote-builder`}
+                href="/#quote-builder"
                 className="px-7 py-3.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs font-sans uppercase font-bold tracking-luxury transition shadow-md shadow-crimson/25 hover:scale-105"
               >
-                Configure {flavor.name} Wholesale Order
+                Configure {flavor.name} Order
               </Link>
 
               <Link

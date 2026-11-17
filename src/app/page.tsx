@@ -58,11 +58,11 @@ export default function HomePage() {
       <Marquee
         items={[
           "MADE IN OSAKA",
-          "2,500MG PLANT COLLAGEN",
+          "5,000MG PLANT COLLAGEN",
           "0G SUGAR",
           "MONK FRUIT SWEETENED",
           "250ML SLIM CAN",
-          "WHOLESALE PACKS 6, 12 & 24",
+          "CARTON PACKS 6, 12 & 24",
           "SHIPS WORLDWIDE",
         ]}
         speedSec={55}

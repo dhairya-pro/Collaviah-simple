@@ -43,7 +43,7 @@ export const FlavorsShowcase: React.FC = () => {
               Two Exquisite Formulations
             </h2>
             <p className="text-charcoal text-sm sm:text-base mt-2 max-w-xl">
-              Botanical harmony crafted for sensory pleasure and cellular beauty. Both available in wholesale packs of 6, 12, and 24 cans.
+              Botanical harmony crafted for clean refreshment. Both available in carton packs of 6, 12, and 24 cans.
             </p>
           </div>
 
@@ -232,7 +232,7 @@ export const FlavorsShowcase: React.FC = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                   <div className="p-3 rounded-xl bg-champagne-light border border-gold-champagne/30 text-center">
                     <span className="text-[10px] uppercase font-sans text-charcoal-muted block">Collagen</span>
-                    <span className="font-serif font-bold text-richBlack text-sm sm:text-base">2,500 mg</span>
+                    <span className="font-serif font-bold text-richBlack text-sm sm:text-base">5,000 mg</span>
                   </div>
                   <div className="p-3 rounded-xl bg-champagne-light border border-gold-champagne/30 text-center">
                     <span className="text-[10px] uppercase font-sans text-charcoal-muted block">Sugar</span>

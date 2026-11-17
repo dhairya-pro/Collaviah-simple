@@ -44,18 +44,18 @@ export const FinalCTASection: React.FC = () => {
         {/* Interactive Action Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="/wholesale#quote-builder"
+            href="/#quote-builder"
             onMouseEnter={handlePetalHover}
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-champagne text-richBlack text-xs sm:text-sm font-sans uppercase font-bold tracking-luxury transition-all duration-300 shadow-2xl hover:scale-105 flex items-center justify-center gap-3 cursor-magnetic group"
           >
             <Sparkles className="w-4 h-4 text-crimson group-hover:rotate-12 transition-transform" />
-            <span>Request Wholesale Quote</span>
+            <span>Request Quote</span>
             <ArrowRight className="w-4 h-4 text-crimson" />
           </Link>
 
           <a
             href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(
-              "Hello COLLAVIAH Wholesale team, I would like to enquire about stocking your 250ml cans in our business."
+              "Hello COLLAVIAH team, I would like to enquire about stocking your 250ml cans in our business."
             )}`}
             target="_blank"
             rel="noopener noreferrer"

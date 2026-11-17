@@ -13,7 +13,7 @@ interface BigMetricBox {
 
 const METRIC_BOXES: BigMetricBox[] = [
   {
-    metric: "2,500mg",
+    metric: "5,000mg",
     title: "Bio-Fermented Collagen",
     subtitle: "Made in Osaka, Japan",
     detail: "Plant-derived peptides matching Type I & III amino acid profiles without animal sourcing.",

@@ -61,7 +61,7 @@ BT
 /F1 10 Tf
 0.83 0.66 0.31 rg
 40 762 Td
-(COMMERCIAL WHOLESALE CATALOGUE  |  MADE IN OSAKA, JAPAN) Tj
+(COMMERCIAL PRODUCT CATALOGUE  |  MADE IN OSAKA, JAPAN) Tj
 ET
 
 BT
@@ -94,7 +94,7 @@ BT
 40 662 Td
 (COLLAVIAH is a premium functional beverage formulated and canned in Osaka, Japan. Each 250ml) Tj
 40 648 Td
-(slim aluminum can provides 2,500mg of bio-fermented plant collagen peptides, 0g sugar (sweetened) Tj
+(slim aluminum can provides 5,000mg of bio-fermented plant collagen peptides, 0g sugar (sweetened) Tj
 40 634 Td
 (exclusively with organic Luo Han Guo monk fruit), and under 15 kcal. Designed for luxury retail) Tj
 40 620 Td
@@ -135,7 +135,7 @@ BT
 /F1 8.5 Tf
 0.15 0.15 0.15 rg
 55 504 Td
-(* 2,500mg Plant Collagen Peptides) Tj
+(* 5,000mg Plant Collagen Peptides) Tj
 55 490 Td
 (* Alpine Strawberry & Japanese Sudachi Lime) Tj
 55 476 Td
@@ -143,7 +143,7 @@ BT
 55 462 Td
 (* Format: 250ml Slim Can (Matte Finish)) Tj
 55 448 Td
-(* Shelf Life: 18 Months Ambient (4-22 deg C)) Tj
+(* Shelf Life: 12 Months Ambient (4-22 deg C)) Tj
 ET
 
 % Flavor 2 Card: Lemon Lime
@@ -167,7 +167,7 @@ BT
 /F1 8.5 Tf
 0.15 0.15 0.15 rg
 325 504 Td
-(* 2,500mg Plant Collagen Peptides) Tj
+(* 5,000mg Plant Collagen Peptides) Tj
 325 490 Td
 (* Sparkling Lemon Zest & Crisp Citrus Zest) Tj
 325 476 Td
@@ -175,7 +175,7 @@ BT
 325 462 Td
 (* Format: 250ml Slim Can (Matte Finish)) Tj
 325 448 Td
-(* Shelf Life: 18 Months Ambient (4-22 deg C)) Tj
+(* Shelf Life: 12 Months Ambient (4-22 deg C)) Tj
 ET
 
 % Nutrition Table
@@ -225,7 +225,7 @@ BT
 50 344 Td
 (Vegan Collagen Peptides) Tj
 160 344 Td
-(2,500 mg) Tj
+(5,000 mg) Tj
 250 344 Td
 (Bio-fermented Gly-Pro-Hyp) Tj
 390 344 Td
@@ -296,7 +296,7 @@ BT
 55 156 Td
 (* High Margin Profile: 40% to 48% retail margin based on recommended $3.99 MSRP.) Tj
 55 140 Td
-(* Ambient Storage Stability: 18-month shelf life reduces chilled warehousing overhead.) Tj
+(* Ambient Storage Stability: 12-month shelf life reduces ambient warehousing overhead.) Tj
 55 124 Td
 (* Category Differentiation: First Japan-made bio-fermented collagen drink in 250ml slim cans.) Tj
 55 108 Td
@@ -336,7 +336,7 @@ BT
 /F2 20 Tf
 1 1 1 rg
 40 798 Td
-(PACKAGING, LOGISTICS & WHOLESALE RATE CARD) Tj
+(PACKAGING, LOGISTICS & COMMERCIAL RATE CARD) Tj
 ET
 
 BT
@@ -438,7 +438,7 @@ BT
 /F2 13 Tf
 0.12 0.04 0.06 rg
 40 525 Td
-(5. COMMERCIAL WHOLESALE PRICE MATRIX (USD)) Tj
+(5. COMMERCIAL CASE PRICE MATRIX (USD)) Tj
 ET
 
 q
@@ -572,7 +572,7 @@ BT
 55 168 Td
 (Commercial Lead: Elena Sato, Head of Commercial Accounts) Tj
 55 152 Td
-(Direct Email: wholesale@collaviah.com  |  Alternative: orders@collaviah.com) Tj
+(Direct Email: orders@collaviah.com  |  Commercial Desk: sales@collaviah.com) Tj
 55 136 Td
 (Phone / WhatsApp: +81 6-6202-8800  |  Commercial Desk Mon-Fri 09:00 - 18:00 JST) Tj
 55 120 Td

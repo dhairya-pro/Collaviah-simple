@@ -7,9 +7,9 @@ import { WHOLESALE_PACKS } from "@/data/packs";
 import { ArrowRight, Download, CheckCircle2, ShieldCheck, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Products & Flavors | COLLAVIAH Vegan Collagen Wholesale",
+  title: "Products & Flavors | COLLAVIAH Vegan Collagen",
   description:
-    "Explore COLLAVIAH 250ml slim can vegan collagen beverages: Strawberry Lime and Lemon Lime. Made in Osaka, Japan. 0g sugar, 2,500mg bio-fermented collagen peptides.",
+    "Explore COLLAVIAH 250ml slim can vegan collagen beverages: Strawberry Lime and Lemon Lime. Made in Osaka, Japan. 0g sugar, 5,000mg bio-fermented collagen peptides.",
 };
 
 export default function ProductsPage() {
@@ -22,27 +22,27 @@ export default function ProductsPage() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-gold-soft/50 shadow-sm mb-4">
             <Sparkles className="w-3.5 h-3.5 text-gold-soft" />
             <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-richBlack font-bold">
-              Made in Osaka, Japan • Wholesale Lineup
+              Made in Osaka, Japan • Beverage Lineup
             </span>
           </div>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-richBlack tracking-tight">
             Our Beverage Portfolio
           </h1>
           <p className="text-charcoal text-base sm:text-lg mt-4 leading-relaxed">
-            Formulated with 2,500mg bio-fermented plant collagen peptides per 250ml can.
+            Formulated with 5,000mg bio-fermented plant collagen peptides per 250ml can.
             Zero sugar, 100% monk fruit sweetener, and under 15 calories.
             Packaged for premier retail, cafe counters, and hospitality minibars worldwide.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/wholesale#quote-builder"
+              href="/#quote-builder"
               className="px-6 py-3 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs font-bold uppercase tracking-luxury shadow-md transition"
             >
-              Request Wholesale Quote
+              Request Quote
             </Link>
             <a
               href="/docs/collaviah-wholesale-catalogue.pdf"
-              download="COLLAVIAH-Wholesale-Catalogue.pdf"
+              download="COLLAVIAH-Catalogue.pdf"
               className="px-6 py-3 rounded-full bg-white border-2 border-richBlack text-richBlack hover:bg-richBlack hover:text-white text-xs font-bold uppercase tracking-luxury transition"
             >
               Download Catalogue (PDF)
@@ -112,7 +112,7 @@ export default function ProductsPage() {
                 {/* Nutrition quick bar */}
                 <div className="grid grid-cols-3 gap-2 p-3 rounded-2xl bg-champagne-light/70 border border-gold-champagne/40 text-center my-6">
                   <div>
-                    <span className="block text-base font-serif font-bold text-richBlack">2,500mg</span>
+                    <span className="block text-base font-serif font-bold text-richBlack">5,000mg</span>
                     <span className="text-[10px] text-charcoal-muted">Plant Collagen</span>
                   </div>
                   <div>
@@ -135,7 +135,7 @@ export default function ProductsPage() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
-                  href={`/wholesale#quote-builder`}
+                  href={`/#quote-builder`}
                   className="px-5 py-2.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs font-bold uppercase tracking-luxury transition"
                 >
                   Order Cases
@@ -145,14 +145,14 @@ export default function ProductsPage() {
           ))}
         </div>
 
-        {/* Wholesale Pack Specifications Card */}
+        {/* Carton Pack Specifications Card */}
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-gold-champagne/60 shadow-lg">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-gold-antique font-bold block">
               Carton Packaging
             </span>
             <h3 className="font-serif text-3xl font-bold text-richBlack mt-1">
-              Available Wholesale Pack Formats
+              Available Carton Pack Formats
             </h3>
             <p className="text-xs text-charcoal mt-2">
               Shipped in reinforced master cartons with shelf-ready tear lines, individual EAN barcodes, and cold-chain resilience.
@@ -190,7 +190,7 @@ export default function ProductsPage() {
                   </ul>
                 </div>
                 <Link
-                  href="/wholesale#quote-builder"
+                  href="/#quote-builder"
                   className="w-full py-2.5 text-center rounded-xl bg-richBlack text-white hover:bg-crimson text-xs font-bold uppercase tracking-wider transition"
                 >
                   Configure Quote

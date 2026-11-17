@@ -2,8 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wholesale Terms of Trade | COLLAVIAH Commercial Supply",
-  description: "Standard terms and conditions governing wholesale sales, carton orders, MOQ policies, and commercial freight.",
+  title: "Commercial Terms of Trade | COLLAVIAH Commercial Supply",
+  description: "Standard terms and conditions governing commercial sales, carton orders, MOQ policies, and freight.",
 };
 
 export default function TermsPage() {
@@ -14,7 +14,7 @@ export default function TermsPage() {
           — COMMERCIAL TRADE AGREEMENT —
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-richBlack mb-6">
-          Wholesale Terms of Trade
+          Commercial Terms of Trade
         </h1>
         <p className="text-xs font-mono text-charcoal-muted mb-8 pb-4 border-b border-gold-champagne/40">
           Applicable to all commercial purchases, retail accounts, and regional beverage distribution contracts
@@ -26,7 +26,7 @@ export default function TermsPage() {
               1. Scope & Acceptance
             </h2>
             <p>
-              These Terms of Trade govern all wholesale purchases of COLLAVIAH 250ml beverage master cases. Placing a wholesale quote inquiry or executing an invoice confirms unconditional agreement to these terms. Consumer retail checkout is not offered through this platform.
+              These Terms of Trade govern all commercial purchases of COLLAVIAH 250ml beverage master cases. Placing a quote inquiry or executing an invoice confirms unconditional agreement to these terms. Consumer retail checkout is not offered through this platform.
             </p>
           </section>
 
@@ -73,7 +73,7 @@ export default function TermsPage() {
               5. Shelf-Life Guarantee
             </h2>
             <p>
-              COLLAVIAH warrants that all wholesale cans dispatched from our manufacturing facilities carry a minimum remaining ambient shelf life of not less than 12 months at the time of delivery (out of 18 months standard shelf life).
+              COLLAVIAH warrants that all cans dispatched from our manufacturing facilities carry a minimum remaining ambient shelf life of not less than 8 months at the time of delivery (out of 12 months standard shelf life).
             </p>
           </section>
         </div>

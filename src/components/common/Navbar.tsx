@@ -18,7 +18,7 @@ import {
 
 const navLinks = [
   { label: "Products", href: "/products", hasDropdown: true },
-  { label: "Wholesale", href: "/wholesale" },
+  { label: "Packs", href: "/wholesale" },
   { label: "Why Us", href: "/#why-collaviah" },
   { label: "Who We Serve", href: "/#who-we-serve" },
   { label: "About", href: "/about" },
@@ -179,7 +179,7 @@ export const Navbar: React.FC = () => {
                                 className="flex items-center gap-1.5 text-[10px] font-sans font-semibold uppercase tracking-wider text-gold-antique hover:text-crimson transition-colors px-2 py-1.5"
                               >
                                 <FileSpreadsheet className="w-3 h-3" />
-                                View Wholesale Packs →
+                                View Pack Formats →
                               </Link>
                             </div>
                           </motion.div>
@@ -215,8 +215,8 @@ export const Navbar: React.FC = () => {
               <button
                 onClick={() => setIsDrawerOpen(true)}
                 className="relative flex items-center justify-center w-9 h-9 rounded-full bg-champagne-light hover:bg-champagne border border-gold-champagne/60 text-charcoal transition-all duration-200 hover:scale-105 hover:border-gold-antique/50 focus:outline-none"
-                aria-label={totalCartons > 0 ? `${totalCartons} Cartons in Quote` : "Wholesale Quote Cart"}
-                title={totalCartons > 0 ? `${totalCartons} Cartons in Quote` : "Wholesale Quote Cart"}
+                aria-label={totalCartons > 0 ? `${totalCartons} Cartons in Quote` : "Quote Cart"}
+                title={totalCartons > 0 ? `${totalCartons} Cartons in Quote` : "Quote Cart"}
               >
                 <ShoppingBag className="w-4 h-4" />
                 {totalCartons > 0 && (
@@ -232,7 +232,7 @@ export const Navbar: React.FC = () => {
 
               {/* Request Quote CTA — desktop only */}
               <Link
-                href="/wholesale#quote-builder"
+                href="/#quote-builder"
                 className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-crimson hover:bg-crimson-hover text-white text-[11px] font-sans font-bold uppercase tracking-luxury transition-all duration-200 shadow-md shadow-crimson/20 hover:shadow-crimson/30 hover:scale-[1.02] focus:outline-none whitespace-nowrap"
               >
                 <Sparkles className="w-3 h-3 text-gold-light flex-shrink-0" />
@@ -360,12 +360,12 @@ export const Navbar: React.FC = () => {
                 {/* CTA */}
                 <div className="pt-4 pb-2">
                   <Link
-                    href="/wholesale#quote-builder"
+                    href="/#quote-builder"
                     onClick={() => setIsMobileOpen(false)}
                     className="flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs font-bold uppercase tracking-luxury shadow-md shadow-crimson/20 transition-all"
                   >
                     <Sparkles className="w-3.5 h-3.5 text-gold-light" />
-                    <span>Build Wholesale Quote</span>
+                    <span>Build Quote</span>
                   </Link>
                 </div>
 

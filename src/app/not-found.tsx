@@ -31,7 +31,7 @@ export default function NotFound() {
             href="/wholesale"
             className="w-full sm:w-auto px-6 py-3 rounded-full bg-champagne-light hover:bg-champagne text-richBlack border border-gold-champagne text-xs font-sans uppercase font-bold tracking-luxury transition"
           >
-            <span>Wholesale Packs</span>
+            <span>Carton Packs</span>
           </Link>
         </div>
       </div>

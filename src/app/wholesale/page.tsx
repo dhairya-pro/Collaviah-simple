@@ -7,22 +7,22 @@ import { Metadata } from "next";
 import { ShieldCheck, Truck, Percent, FileCheck, Layers } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "B2B Wholesale Portal & Rate Cards | COLLAVIAH Japan",
+  title: "B2B Case Formats & Rate Cards | COLLAVIAH Japan",
   description:
-    "Official wholesale packs of 6, 12, and 24 cans. Discover volume tier discount rates, FOB/CIF freight timelines, and commercial margin specifications.",
+    "Official carton packs of 6, 12, and 24 cans. Discover volume tier discount rates, FOB/CIF freight timelines, and commercial specifications.",
 };
 
 export default function WholesalePage() {
   return (
     <div className="pt-24 pb-20 bg-pearl min-h-screen">
-      {/* WHOLESALE OVERVIEW HERO */}
+      {/* CASE PACKS OVERVIEW HERO */}
       <section className="py-16 sm:py-20 bg-gradient-to-b from-champagne-light to-pearl border-b border-gold-champagne/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-semibold block mb-3">
             — GLOBAL TRADE & COMMERCIAL SUPPLY —
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-richBlack max-w-4xl mx-auto">
-            Wholesale Packs & Case Logistics
+            Case Packs & Carton Logistics
           </h1>
           <p className="text-charcoal text-base sm:text-lg max-w-2xl mx-auto mt-4 leading-relaxed font-light">
             Engineered for high inventory turnover across modern grocery, aesthetic clinics, hospitality, and regional beverage distribution networks.
@@ -33,8 +33,8 @@ export default function WholesalePage() {
             <div className="p-4 rounded-2xl bg-white border border-gold-champagne/60 shadow-sm flex items-start gap-3">
               <Percent className="w-5 h-5 text-crimson flex-shrink-0 mt-0.5" />
               <div>
-                <h3 className="text-xs font-bold text-richBlack">Healthy Margins</h3>
-                <p className="text-[11px] text-charcoal-muted mt-0.5">Up to 45% retailer mark-up profile</p>
+                <h3 className="text-xs font-bold text-richBlack">Direct Pricing</h3>
+                <p className="text-[11px] text-charcoal-muted mt-0.5">Tiered discounts on volume orders</p>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ export default function WholesalePage() {
             <div className="p-4 rounded-2xl bg-white border border-gold-champagne/60 shadow-sm flex items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-leafGreen flex-shrink-0 mt-0.5" />
               <div>
-                <h3 className="text-xs font-bold text-richBlack">18-Month Stability</h3>
+                <h3 className="text-xs font-bold text-richBlack">12-Month Stability</h3>
                 <p className="text-[11px] text-charcoal-muted mt-0.5">Ambient storage (4°C – 22°C)</p>
               </div>
             </div>

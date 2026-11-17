@@ -2,7 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Commercial Privacy Policy | COLLAVIAH Wholesale",
+  title: "Commercial Privacy Policy | COLLAVIAH",
   description: "B2B commercial privacy policy governing RFQs, business communications, and trade confidentiality.",
 };
 
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           B2B Commercial Privacy Policy
         </h1>
         <p className="text-xs font-mono text-charcoal-muted mb-8 pb-4 border-b border-gold-champagne/40">
-          Last Updated: October 2026 • Applicable to all commercial wholesale inquiries and partners
+          Last Updated: October 2026 • Applicable to all commercial inquiries and partners
         </p>
 
         <div className="space-y-8 text-xs sm:text-sm text-charcoal leading-relaxed">
@@ -38,9 +38,9 @@ export default function PrivacyPage() {
               Your commercial data is used exclusively to:
             </p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Prepare and deliver formal wholesale quotations and rate schedules.</li>
+              <li>Prepare and deliver formal quotations and rate schedules.</li>
               <li>Coordinate sample kit dispatches and freight logistics.</li>
-              <li>Verify commercial buyer identity and establish wholesale credit terms.</li>
+              <li>Verify commercial buyer identity and establish trade credit terms.</li>
               <li>Communicate critical product updates, batch analyses, and seasonal production schedules.</li>
             </ul>
           </section>
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
               3. Non-Disclosure & Trade Protection
             </h2>
             <p>
-              We treat all B2B order allocations, store locations, and negotiated tier pricing with absolute confidentiality. We do not sell, rent, or lease wholesale partner contact lists to third-party marketing entities. Information is shared only with verified logistics and customs clearance partners strictly to execute delivery.
+              We treat all B2B order allocations, store locations, and negotiated tier pricing with absolute confidentiality. We do not sell, rent, or lease partner contact lists to third-party marketing entities. Information is shared only with verified logistics and customs clearance partners strictly to execute delivery.
             </p>
           </section>
 

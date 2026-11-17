@@ -23,8 +23,8 @@ export const QuoteDrawer: React.FC = () => {
 
   const handleWhatsAppClick = () => {
     const text = formatWhatsAppMessage({
-      name: "Wholesale Buyer",
-      businessName: "Wholesale Inquiry",
+      name: "Commercial Buyer",
+      businessName: "Order Inquiry",
       businessType: "Commercial Account",
       items: detailedItems.map((item) => ({
         packName: item.packName,
@@ -44,7 +44,7 @@ export const QuoteDrawer: React.FC = () => {
     if (formEl) {
       formEl.scrollIntoView({ behavior: "smooth" });
     } else {
-      window.location.href = "/wholesale#quote-builder";
+      window.location.href = "/#quote-builder";
     }
   };
 
@@ -73,7 +73,7 @@ export const QuoteDrawer: React.FC = () => {
             <div className="p-6 border-b border-gold-champagne/30 bg-champagne-light flex items-center justify-between">
               <div>
                 <span className="text-[10px] font-sans uppercase tracking-luxury text-gold-antique font-semibold block">
-                  Wholesale Enquiry Cart
+                  Order Enquiry Cart
                 </span>
                 <h3 className="font-serif text-xl text-richBlack font-bold flex items-center gap-2 mt-0.5">
                   Quote Drawer
@@ -98,13 +98,13 @@ export const QuoteDrawer: React.FC = () => {
                   <PackageCheck className="w-12 h-12 text-gold-soft mb-3 opacity-60" />
                   <p className="font-serif text-lg text-richBlack">Your quote drawer is empty</p>
                   <p className="text-xs mt-1 text-charcoal">
-                    Add packs of 6, 12, or 24 cans to configure your wholesale inquiry.
+                    Add packs of 6, 12, or 24 cans to configure your custom order inquiry.
                   </p>
                   <button
                     onClick={() => setIsDrawerOpen(false)}
                     className="mt-5 px-5 py-2.5 rounded-full bg-crimson text-white text-xs font-semibold tracking-wide hover:bg-crimson-hover transition"
                   >
-                    Browse Wholesale Packs
+                    Browse Pack Formats
                   </button>
                 </div>
               ) : (

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Wholesale Accounts Desk | COLLAVIAH",
+  title: "Contact Commercial Accounts Desk | COLLAVIAH",
   description:
-    "Direct commercial inquiries, distributor applications, and complimentary buyer tasting kits for COLLAVIAH Japan-based vegan collagen beverages.",
+    "Direct commercial inquiries, distributor applications, and complimentary buyer tasting kits for COLLAVIAH vegan collagen beverages made in Osaka.",
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
             — COMMERCIAL CLIENT SERVICES —
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-richBlack">
-            Wholesale Enquiries & Global Trade Desk
+            Commercial Enquiries & Global Trade Desk
           </h1>
           <p className="text-charcoal text-base max-w-2xl mx-auto mt-4 font-light">
             Connect with our trade relationship managers for custom carton allocations, distributor exclusivity, and export freight quotations.
@@ -41,9 +41,9 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3 p-3 rounded-xl bg-champagne-light/50 border border-gold-champagne/30">
                   <Mail className="w-5 h-5 text-crimson flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold text-richBlack block">Wholesale Email</span>
-                    <a href="mailto:wholesale@collaviah.com" className="text-crimson hover:underline">
-                      wholesale@collaviah.com
+                    <span className="font-bold text-richBlack block">Commercial Email</span>
+                    <a href="mailto:orders@collaviah.com" className="text-crimson hover:underline">
+                      orders@collaviah.com
                     </a>
                     <span className="text-[11px] text-charcoal-muted block mt-0.5">Response within 4 hours</span>
                   </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                 Qualified retail buyers, F&B managers, and commercial distributors can request a 2-flavor sample box delivered directly to your corporate receiving address.
               </p>
               <Link
-                href="/wholesale#quote-builder"
+                href="/#quote-builder"
                 className="inline-block text-xs font-bold text-crimson hover:text-crimson-hover uppercase tracking-wider"
               >
                 Request via Quote Builder →
@@ -117,7 +117,7 @@ export default function ContactPage() {
 
               <div className="space-y-4">
                 <Link
-                  href="/wholesale#quote-builder"
+                  href="/#quote-builder"
                   className="block p-5 rounded-2xl border border-gold-champagne hover:border-crimson hover:bg-champagne-light/30 transition group"
                 >
                   <div className="flex items-center justify-between">
@@ -135,7 +135,7 @@ export default function ContactPage() {
 
                 <a
                   href={`https://wa.me/${whatsappPhone}?text=${encodeURIComponent(
-                    "Hello, I am interested in discussing wholesale pricing and distribution terms for COLLAVIAH."
+                    "Hello, I am interested in discussing case pricing and distribution terms for COLLAVIAH."
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -162,10 +162,10 @@ export default function ContactPage() {
                     Send tender documents, vendor questionnaires, or distributor exclusivity proposals to:
                   </p>
                   <a
-                    href="mailto:wholesale@collaviah.com"
+                    href="mailto:orders@collaviah.com"
                     className="inline-block mt-2 font-mono text-xs font-bold text-crimson hover:underline"
                   >
-                    wholesale@collaviah.com
+                    orders@collaviah.com
                   </a>
                 </div>
               </div>

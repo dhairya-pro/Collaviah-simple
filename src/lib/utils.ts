@@ -16,10 +16,10 @@ export function formatWhatsAppMessage(params: {
   notes?: string;
 }): string {
   const lines = [
-    `*COLLAVIAH Wholesale Quote Request*`,
+    `*COLLAVIAH Order Quote Request*`,
     `----------------------------------`,
     `*Contact:* ${params.name}`,
-    `*Business:* ${params.businessName} (${params.businessType || "Wholesale Buyer"})`,
+    `*Business:* ${params.businessName} (${params.businessType || "Commercial Buyer"})`,
     params.city ? `*Location:* ${params.city}` : "",
     ``,
     `*Selected Order Configuration:*`,

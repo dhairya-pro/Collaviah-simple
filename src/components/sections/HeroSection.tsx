@@ -184,7 +184,7 @@ export const HeroSection: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-gold-soft/50 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-gold-soft" />
             <span className="text-[10px] sm:text-xs font-sans uppercase tracking-[0.25em] text-richBlack font-bold">
-              Made in Osaka • 2,500mg Plant Collagen • 250ml Wholesale
+              Made in Osaka • 5,000mg Plant Collagen • 250ml Slim Cans
             </span>
           </div>
 
@@ -218,16 +218,16 @@ export const HeroSection: React.FC = () => {
           Premium Vegan Collagen Beverages for Retailers & Hospitality
         </h1>
 
-        {/* Wholesale Price Range Banner */}
+        {/* Price Range Banner */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-gold-antique/50 text-xs sm:text-sm font-mono font-bold text-richBlack my-4 shadow-sm">
-          <span>Wholesale from $14.50 / carton ($2.05–$2.45 / can)</span>
+          <span>From $14.50 / carton ($2.05–$2.45 / can)</span>
           <span className="text-gold-antique">•</span>
-          <span className="text-leafGreen">Up to 45% Retail Margin</span>
+          <span className="text-leafGreen">Direct Case Orders</span>
         </div>
 
         {/* Plain Fact Subhead */}
         <p className="text-charcoal text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed font-normal">
-          2,500mg bio-fermented collagen per 250ml slim can. Zero sugar, monk fruit sweetness, and 18-month ambient shelf life. Made in Osaka, shipping worldwide in cartons of 6, 12, and 24.
+          5,000mg bio-fermented collagen per 250ml slim can. Zero sugar, monk fruit sweetness, and 12-month ambient shelf life. Made in Osaka, shipping worldwide in cartons of 6, 12, and 24.
         </p>
 
         {/* DUAL CANS HERO IMAGE (SHOWS BOTH FLAVORS TOGETHER) */}
@@ -275,16 +275,16 @@ export const HeroSection: React.FC = () => {
         {/* CTAs: Quote = Solid, Catalogue = Outline */}
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10">
           <Link
-            href="/wholesale#quote-builder"
+            href="/#quote-builder"
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-crimson hover:bg-crimson-hover text-white text-xs sm:text-sm font-sans uppercase font-bold tracking-luxury transition-all duration-200 shadow-xl shadow-crimson/25 hover:scale-105 flex items-center justify-center gap-3"
           >
-            <span>Request Wholesale Quote</span>
+            <span>Request Quote</span>
             <ArrowRight className="w-4 h-4 text-white" />
           </Link>
 
           <a
             href="/docs/collaviah-wholesale-catalogue.pdf"
-            download="COLLAVIAH-Wholesale-Catalogue.pdf"
+            download="COLLAVIAH-Catalogue.pdf"
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-transparent hover:bg-richBlack text-richBlack hover:text-white border-2 border-richBlack text-xs sm:text-sm font-sans uppercase font-bold tracking-luxury transition-all duration-200 shadow-sm flex items-center justify-center gap-2 hover:scale-105"
           >
             <Download className="w-4 h-4" />
@@ -358,7 +358,7 @@ export const HeroSection: React.FC = () => {
                 Ambient Storage
               </span>
               <span className="text-sm font-serif font-bold text-richBlack block">
-                18-Month Shelf Life
+                12-Month Shelf Life
               </span>
               <span className="text-[10px] text-charcoal-muted block mt-0.5">
                 4°C to 22°C ambient

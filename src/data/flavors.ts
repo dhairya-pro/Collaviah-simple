@@ -35,7 +35,7 @@ export const FLAVORS: Flavor[] = [
       servingSize: "250 ml (1 can)",
       calories: "12 kcal",
       sugar: "0 g",
-      collagen: "2,500 mg (Vegan Bio-Peptides)",
+      collagen: "5,000 mg (Vegan Bio-Peptides)",
       carbs: "1.2 g",
       fat: "0 g",
       sodium: "8 mg",
@@ -94,7 +94,7 @@ export const FLAVORS: Flavor[] = [
       servingSize: "250 ml (1 can)",
       calories: "11 kcal",
       sugar: "0 g",
-      collagen: "2,500 mg (Vegan Bio-Peptides)",
+      collagen: "5,000 mg (Vegan Bio-Peptides)",
       carbs: "1.1 g",
       fat: "0 g",
       sodium: "7 mg",
@@ -123,11 +123,11 @@ export const FLAVORS: Flavor[] = [
 
 export const BRAND_CLAIMS = [
   {
-    title: "2,500mg Plant Collagen",
+    title: "5,000mg Plant Collagen",
     subtitle: "Made in Osaka, Japan",
     description: "Bio-fermented plant collagen peptides matching Type I & III amino acid profiles.",
     icon: "sparkles",
-    metric: "2,500mg",
+    metric: "5,000mg",
   },
   {
     title: "0g Sugar",
@@ -147,7 +147,7 @@ export const BRAND_CLAIMS = [
 
 export const REGULATORY_COMPLIANCE_NOTES = {
   complianceCertifications: "ISO 22000 & HACCP Certified • Global Export Compliant",
-  shelfLife: "18 Months from date of manufacture when stored in cool, dry conditions away from direct sunlight.",
+  shelfLife: "12 Months from date of manufacture when stored in cool, dry conditions away from direct sunlight.",
   storageRecommendation: "Store between 4°C - 22°C. Best served chilled (6°C - 8°C).",
   allergens: "Contains zero common allergens (Gluten-free, Soy-free, Dairy-free, Nut-free).",
   manufactureOrigin: "Formulated and canned in Osaka, Japan under sterile aseptic canning protocols.",

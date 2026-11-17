@@ -22,7 +22,6 @@ import {
   Building,
   TrendingUp,
   DollarSign,
-  Calculator,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -43,16 +42,6 @@ export const QuoteBuilderSection: React.FC = () => {
     message: string;
   } | null>(null);
   const [submitError, setSubmitError] = useState<string | null>(null);
-
-  // Commercial Profit & Retail Margin Calculator State
-  const [targetMsrp, setTargetMsrp] = useState<number>(4.5); // Target retail price per can in USD
-  const [showMarginCalc, setShowMarginCalc] = useState<boolean>(true);
-
-  // Dynamic wholesale cost basis per can based on volume tier
-  const effectiveWholesaleCostPerCan = totalCartons >= 30 ? 2.05 : totalCartons >= 15 ? 2.25 : 2.45;
-  const profitPerCan = Math.max(0, targetMsrp - effectiveWholesaleCostPerCan);
-  const grossMarginPercent = targetMsrp > 0 ? ((profitPerCan / targetMsrp) * 100).toFixed(1) : "0";
-  const projectedConsignmentProfit = (totalCans > 0 ? totalCans : 96) * profitPerCan;
 
   const {
     register,
@@ -82,7 +71,6 @@ export const QuoteBuilderSection: React.FC = () => {
           items: detailedItems,
           totalCartons,
           totalCans,
-          projectedMargin: `${grossMarginPercent}%`,
         }),
       });
 
@@ -118,8 +106,8 @@ export const QuoteBuilderSection: React.FC = () => {
   const handleWhatsAppInstant = () => {
     const text = formatWhatsAppMessage({
       name: "Commercial Buyer",
-      businessName: "Wholesale Order Inquiry",
-      businessType: "Wholesale Partner",
+      businessName: "Case Order Inquiry",
+      businessType: "Commercial Partner",
       items: detailedItems.map((item) => ({
         packName: item.packName,
         flavor: item.flavorName,
@@ -139,73 +127,16 @@ export const QuoteBuilderSection: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-semibold block">
-            — B2B COMMERCIAL CONFIGURATOR & MARGIN ANALYZER —
+            — B2B ORDER CONFIGURATOR —
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-richBlack mt-2">
-            Build Your Wholesale Order
+            Build Your Case Order
           </h2>
           <p className="text-charcoal text-sm sm:text-base mt-3 leading-relaxed">
-            Customize case quantities, view total can volume in real time, analyze expected retail margins, and receive formal wholesale rate cards with volume discounts.
+            Customize case quantities, view total can volume in real time, and receive formal commercial rate cards with volume tier discounts.
           </p>
-        </div>
-
-        {/* B2B COMMERCIAL MARGIN & RESALE PROFIT ESTIMATOR BANNER */}
-        <div className="mb-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-richBlack via-[#26211F] to-richBlack text-white border border-gold-soft/30 shadow-2xl relative overflow-hidden">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
-            <div className="space-y-1.5 max-w-md">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-gold-soft font-bold flex items-center gap-1.5">
-                <Calculator className="w-3.5 h-3.5 text-gold-soft" />
-                <span>Commercial Retailer ROI Estimator</span>
-              </span>
-              <h3 className="font-serif text-2xl font-bold text-white">
-                Projected Resale Margin Calculator
-              </h3>
-              <p className="text-xs text-white/70">
-                Adjust your venue's target consumer selling price to inspect your profit yield per case and batch:
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-white/5 p-4 rounded-2xl border border-white/10">
-              <div>
-                <label className="text-[10px] uppercase font-mono text-white/60 block">Target Retail / Can</label>
-                <div className="flex items-center gap-1 mt-1">
-                  <span className="text-xs text-gold-soft font-bold">$</span>
-                  <input
-                    type="number"
-                    step="0.25"
-                    min="3.00"
-                    max="9.00"
-                    value={targetMsrp}
-                    onChange={(e) => setTargetMsrp(parseFloat(e.target.value) || 4.5)}
-                    className="w-16 bg-white/10 border border-white/20 rounded px-2 py-0.5 text-xs text-white font-mono font-bold focus:outline-none"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <span className="text-[10px] uppercase font-mono text-white/60 block">Gross Margin %</span>
-                <span className="text-lg font-mono font-bold text-leafGreen block mt-0.5">
-                  {grossMarginPercent}%
-                </span>
-              </div>
-
-              <div>
-                <span className="text-[10px] uppercase font-mono text-white/60 block">Profit / Can</span>
-                <span className="text-lg font-mono font-bold text-gold-soft block mt-0.5">
-                  +${profitPerCan.toFixed(2)}
-                </span>
-              </div>
-
-              <div>
-                <span className="text-[10px] uppercase font-mono text-white/60 block">Batch Gross Profit</span>
-                <span className="text-lg font-mono font-bold text-white block mt-0.5">
-                  ${projectedConsignmentProfit.toFixed(0)}
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -294,7 +225,7 @@ export const QuoteBuilderSection: React.FC = () => {
               <div className="mt-6 p-4 rounded-2xl bg-gradient-to-r from-champagne-light via-white to-blush/20 border border-gold-soft/40 space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-xs font-sans uppercase tracking-wider text-charcoal">
-                    Total Wholesale Cartons:
+                    Total Order Cartons:
                   </span>
                   <span className="font-mono text-lg font-bold text-richBlack">
                     {totalCartons} Cases
@@ -315,7 +246,7 @@ export const QuoteBuilderSection: React.FC = () => {
                       ? "High-Velocity Pallet (Tier 3 -18%)"
                       : totalCartons >= 15
                       ? "Standard Commercial (Tier 2 -10%)"
-                      : "Entry Wholesale (Tier 1 Base)"}
+                      : "Standard Order (Tier 1 Base)"}
                   </span>
                 </div>
               </div>
@@ -459,7 +390,7 @@ export const QuoteBuilderSection: React.FC = () => {
                       <option value="Salon / Spa / Aesthetic Clinic">Salon / Med-Spa / Luxury Wellness</option>
                       <option value="Hotel / Hospitality / Minibar">Hotel / Hospitality / Minibar</option>
                       <option value="Corporate Gifting">Corporate Gifting & Hampers</option>
-                      <option value="Beverage Distributor / Wholesaler">Beverage Distributor / Wholesaler</option>
+                      <option value="Beverage Distributor / Stockist">Beverage Distributor / Stockist</option>
                       <option value="Other Commercial Buyer">Other Commercial Buyer</option>
                     </select>
                   </div>
@@ -613,11 +544,11 @@ export const QuoteBuilderSection: React.FC = () => {
                     className="w-full py-4 px-6 rounded-full bg-crimson hover:bg-crimson-hover disabled:opacity-60 text-white text-xs font-sans uppercase font-bold tracking-luxury transition-all duration-300 shadow-xl shadow-crimson/25 hover:scale-[1.01] flex items-center justify-center gap-2 cursor-magnetic"
                   >
                     {isSubmitting ? (
-                      <span>Generating Wholesale Quotation...</span>
+                      <span>Generating Quotation...</span>
                     ) : (
                       <>
                         <Send className="w-4 h-4 text-white" />
-                        <span>Submit Wholesale Quote Request</span>
+                        <span>Submit Quote Request</span>
                       </>
                     )}
                   </button>

@@ -26,7 +26,7 @@ export const FAQSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-semibold block">
-            — WHOLESALE KNOWLEDGE BASE —
+            — BUYER KNOWLEDGE BASE —
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-richBlack mt-2">
             Frequently Asked Questions
