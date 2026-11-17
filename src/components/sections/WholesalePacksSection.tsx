@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { WHOLESALE_PACKS } from "@/data/packs";
 import { WholesalePack, FlavorId } from "@/types";
 import { CartonMockup } from "@/components/common/CartonMockup";
@@ -209,6 +210,95 @@ export const WholesalePacksSection: React.FC = () => {
               </motion.div>
             );
           })}
+        </div>
+
+        {/* REAL COMMERCIAL PHOTOGRAPHY SHOWCASE */}
+        <div className="mt-20 pt-16 border-t border-gold-champagne/40">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-bold block">
+              — PRODUCTION & MERCHANDISING GALLERY —
+            </span>
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-richBlack mt-1">
+              From Osaka Facility to Retail Chiller
+            </h3>
+            <p className="text-xs text-charcoal mt-2">
+              Authentic commercial photography of our manufacturing, export carton stacking, and refrigerated retail placement.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Photo 1: Cartons Stack */}
+            <div className="group rounded-3xl overflow-hidden bg-white border border-gold-champagne/60 shadow-md hover:shadow-xl transition-all">
+              <div className="relative h-60 w-full overflow-hidden">
+                <Image
+                  src="/images/photos/cartons-stack.jpg"
+                  alt="COLLAVIAH master wholesale shipping cartons stacked in warehouse"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-richBlack/80 backdrop-blur-md text-white text-[10px] font-mono">
+                  Master Cartons & Pallets
+                </span>
+              </div>
+              <div className="p-5">
+                <h4 className="font-serif font-bold text-base text-richBlack">
+                  Heavy-Duty Shipping Cartons
+                </h4>
+                <p className="text-xs text-charcoal/80 mt-1 leading-relaxed">
+                  Packs of 6, 12, and 24 manufactured with moisture-resistant corrugated kraft and tamper-evident security tape for international freight.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 2: Shop Fridge */}
+            <div className="group rounded-3xl overflow-hidden bg-white border border-gold-champagne/60 shadow-md hover:shadow-xl transition-all">
+              <div className="relative h-60 w-full overflow-hidden">
+                <Image
+                  src="/images/photos/shop-fridge.jpg"
+                  alt="COLLAVIAH cans chilled in upscale retail shop display cooler"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-richBlack/80 backdrop-blur-md text-white text-[10px] font-mono">
+                  Retail Chiller Placement
+                </span>
+              </div>
+              <div className="p-5">
+                <h4 className="font-serif font-bold text-base text-richBlack">
+                  Impulse Grab-and-Go Merchandising
+                </h4>
+                <p className="text-xs text-charcoal/80 mt-1 leading-relaxed">
+                  Eye-catching matte aluminum 250ml slim cans designed to capture customer attention in grab-and-go coolers and checkout registers.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 3: Osaka Lab & Plant */}
+            <div className="group rounded-3xl overflow-hidden bg-white border border-gold-champagne/60 shadow-md hover:shadow-xl transition-all">
+              <div className="relative h-60 w-full overflow-hidden">
+                <Image
+                  src="/images/photos/osaka-lab.jpg"
+                  alt="State-of-the-art bio-fermentation laboratory and aseptic canning plant in Osaka, Japan"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-richBlack/80 backdrop-blur-md text-white text-[10px] font-mono">
+                  Osaka Facility & Cleanroom
+                </span>
+              </div>
+              <div className="p-5">
+                <h4 className="font-serif font-bold text-base text-richBlack">
+                  Aseptic Cold-Fill Canning Line
+                </h4>
+                <p className="text-xs text-charcoal/80 mt-1 leading-relaxed">
+                  Synthesized and canned in sterile ISO 22000 cleanroom environments in Osaka, Japan, preserving delicate plant peptides and crisp carbonation.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

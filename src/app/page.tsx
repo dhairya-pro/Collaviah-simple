@@ -54,47 +54,35 @@ export default function HomePage() {
       {/* 1. Hero — critical, always eager */}
       <HeroSection />
 
-      {/* Marquee Strip 1 */}
+      {/* Single Slow Moving Text Strip */}
       <Marquee
         items={[
-          "NOURISH",
-          "REJUVENATE",
-          "GLOW",
-          "JAPAN-BASED VEGAN COLLAGEN",
-          "2,500MG BIO-PEPTIDES",
+          "MADE IN OSAKA",
+          "2,500MG PLANT COLLAGEN",
+          "0G SUGAR",
+          "MONK FRUIT SWEETENED",
           "250ML SLIM CAN",
+          "WHOLESALE PACKS 6, 12 & 24",
+          "SHIPS WORLDWIDE",
         ]}
-        speedSec={32}
+        speedSec={55}
       />
 
       {/* 2. Trust Bar — near fold, keep eager */}
       <TrustBar />
 
-      {/* 3–11. Below-fold sections — all lazy-loaded */}
-      <WhyCollaviah />
-      <FlavorsShowcase />
-      <WholesalePacksSection />
-      <QuoteBuilderSection />
-      <WhoWeServeSection />
-      <HowItWorksSection />
-      <SocialProofSection />
-
-      {/* Marquee Strip 2 (Reverse) */}
-      <Marquee
-        items={[
-          "ZERO SUGAR",
-          "MONK FRUIT SWEETENER",
-          "LOW CALORIES",
-          "NON-GMO",
-          "100% RECYCLABLE ALUMINUM",
-          "COMMERCIAL EXPORTS",
-        ]}
-        reverse={true}
-        speedSec={36}
-      />
-
-      <FAQSection />
-      <FinalCTASection />
+      {/* 3–10. Below-fold sections — all lazy-loaded with generous whitespace */}
+      <div className="space-y-12">
+        <WhyCollaviah />
+        <FlavorsShowcase />
+        <WholesalePacksSection />
+        <QuoteBuilderSection />
+        <WhoWeServeSection />
+        <HowItWorksSection />
+        <SocialProofSection />
+        <FAQSection />
+        <FinalCTASection />
+      </div>
     </div>
   );
 }

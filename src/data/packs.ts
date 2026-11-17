@@ -10,7 +10,7 @@ export const WHOLESALE_PACKS: WholesalePack[] = [
     idealFor: "Cafe counter merchandising, salon checkout stations & initial market trials",
     targetSectors: ["Specialty Cafes", "Hair & Nail Salons", "Boutique Studios", "Retail Pilots"],
     moq: 10, // 10 cartons (60 cans total)
-    priceGuide: "Price on Wholesale Enquiry (Tier 1 Entry)",
+    priceGuide: "From $14.50 / carton ($2.41 / can) • MSRP $3.99",
     tierDiscounts: [
       { minCartons: 10, discountPercent: 0 },
       { minCartons: 25, discountPercent: 5 },
@@ -36,7 +36,7 @@ export const WHOLESALE_PACKS: WholesalePack[] = [
     idealFor: "Dedicated beverage coolers, organic grocery aisles & wellness member lounges",
     targetSectors: ["Premium Grocery", "Aesthetic Clinics", "Luxury Spas", "Co-working Hubs"],
     moq: 8, // 8 cartons (96 cans total)
-    priceGuide: "Price on Wholesale Enquiry (Tier 2 Standard)",
+    priceGuide: "From $27.00 / carton ($2.25 / can) • MSRP $3.99",
     tierDiscounts: [
       { minCartons: 8, discountPercent: 0 },
       { minCartons: 20, discountPercent: 7 },
@@ -62,7 +62,7 @@ export const WHOLESALE_PACKS: WholesalePack[] = [
     idealFor: "Distributor pallets, fitness chains, luxury hotel minibars & corporate events",
     targetSectors: ["Regional Distributors", "Luxury Hotel Chains", "Fitness Clubs", "Corporate Gifting"],
     moq: 5, // 5 cartons (120 cans total)
-    priceGuide: "Price on Wholesale Enquiry (Tier 3 Volume)",
+    priceGuide: "From $49.20 / carton ($2.05 / can) • MSRP $3.99",
     tierDiscounts: [
       { minCartons: 5, discountPercent: 0 },
       { minCartons: 15, discountPercent: 10 },

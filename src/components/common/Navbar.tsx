@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 const navLinks = [
-  { label: "Products", href: "/#flavors", hasDropdown: true },
+  { label: "Products", href: "/products", hasDropdown: true },
   { label: "Wholesale", href: "/wholesale" },
   { label: "Why Us", href: "/#why-collaviah" },
   { label: "Who We Serve", href: "/#who-we-serve" },
@@ -93,7 +93,7 @@ export const Navbar: React.FC = () => {
                 COLLAVIAH
               </span>
               <span className="text-[8.5px] font-sans uppercase tracking-[0.3em] text-gold-antique font-medium mt-[1px]">
-                日本発 Vegan Collagen
+                Made in Osaka • Vegan Collagen
               </span>
             </Link>
 
@@ -108,8 +108,9 @@ export const Navbar: React.FC = () => {
                       onMouseEnter={handleDropdownEnter}
                       onMouseLeave={handleDropdownLeave}
                     >
-                      {/* Dropdown trigger button */}
-                      <button
+                      {/* Products Direct Link with Dropdown Indicator */}
+                      <Link
+                        href="/products"
                         className={`flex items-center gap-1 px-3 py-2 rounded-lg text-[11px] font-sans font-semibold uppercase tracking-luxury transition-colors duration-200 focus:outline-none ${
                           isActive(link.href)
                             ? "text-crimson"
@@ -124,7 +125,7 @@ export const Navbar: React.FC = () => {
                             isDropdownOpen ? "rotate-180" : ""
                           }`}
                         />
-                      </button>
+                      </Link>
 
                       {/* Dropdown Panel */}
                       <AnimatePresence>
@@ -214,7 +215,8 @@ export const Navbar: React.FC = () => {
               <button
                 onClick={() => setIsDrawerOpen(true)}
                 className="relative flex items-center justify-center w-9 h-9 rounded-full bg-champagne-light hover:bg-champagne border border-gold-champagne/60 text-charcoal transition-all duration-200 hover:scale-105 hover:border-gold-antique/50 focus:outline-none"
-                aria-label={`Quote cart — ${totalCartons} item${totalCartons !== 1 ? "s" : ""}`}
+                aria-label={totalCartons > 0 ? `${totalCartons} Cartons in Quote` : "Wholesale Quote Cart"}
+                title={totalCartons > 0 ? `${totalCartons} Cartons in Quote` : "Wholesale Quote Cart"}
               >
                 <ShoppingBag className="w-4 h-4" />
                 {totalCartons > 0 && (

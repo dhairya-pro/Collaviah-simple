@@ -2,124 +2,112 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { ShieldCheck, Award, Leaf, Sparkles, CheckCircle2 } from "lucide-react";
 
-interface TrustBadge {
+interface BigMetricBox {
+  metric: string;
   title: string;
   subtitle: string;
   detail: string;
-  iconPath: string;
-  secondaryPath?: string;
 }
 
-const TRUST_BADGES: TrustBadge[] = [
+const METRIC_BOXES: BigMetricBox[] = [
   {
-    title: "Japan-Based Collagen",
-    subtitle: "2,500mg Peptides",
-    detail: "Precision plant fermentation",
-    iconPath: "M12 2L15 8.5L22 9.5L17 14.5L18.5 21.5L12 18L5.5 21.5L7 14.5L2 9.5L9 8.5L12 2Z",
+    metric: "2,500mg",
+    title: "Bio-Fermented Collagen",
+    subtitle: "Made in Osaka, Japan",
+    detail: "Plant-derived peptides matching Type I & III amino acid profiles without animal sourcing.",
   },
   {
-    title: "100% Certified Vegan",
-    subtitle: "Cruelty-Free Matrix",
-    detail: "Zero animal or marine source",
-    iconPath: "M12 22C12 22 20 18 20 11C20 6.5 16.4 3 12 3C7.6 3 4 6.5 4 11C4 18 12 22 12 22Z",
-    secondaryPath: "M12 3V22",
+    metric: "0g",
+    title: "Sugar Added",
+    subtitle: "Pure Monk Fruit Sweetened",
+    detail: "Sweetened exclusively with organic Luo Han Guo extract. Clean flavor with zero sugar.",
   },
   {
-    title: "Zero Sugar",
-    subtitle: "0g Glycemic Impact",
-    detail: "Clean metabolic profile",
-    iconPath: "M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z",
-    secondaryPath: "M4.93 4.93L19.07 19.07",
-  },
-  {
-    title: "Monk Fruit Sweetened",
-    subtitle: "Luo Han Guo Extract",
-    detail: "Pure botanical Mogroside V",
-    iconPath: "M12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4Z",
-    secondaryPath: "M12 4V2",
-  },
-  {
-    title: "Low Calories",
-    subtitle: "< 15 kcal / 250ml",
-    detail: "Guilt-free beauty hydration",
-    iconPath: "M8.5 14.5C8.5 16.43 10.07 18 12 18C13.93 18 15.5 16.43 15.5 14.5C15.5 12.57 12 8 12 8C12 8 8.5 12.57 8.5 14.5Z",
+    metric: "< 15 kcal",
+    title: "Light & Functional",
+    subtitle: "250ml Slim Can",
+    detail: "Clean functional hydration engineered for upscale retail shelves, cafes, and hospitality.",
   },
 ];
 
 export const TrustBar: React.FC = () => {
   return (
-    <section id="trust" className="py-12 bg-pearl border-y border-gold-champagne/50 relative z-20">
+    <section id="trust" className="py-16 bg-pearl border-y border-gold-champagne/50 relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Subtle Section Tag */}
-        <div className="text-center mb-8">
-          <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-semibold block">
+        
+        {/* Subtle Tagline */}
+        <div className="text-center mb-10">
+          <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-gold-antique font-bold block">
             — THE COLLAVIAH STANDARD —
           </span>
-          <p className="text-xs text-charcoal font-medium mt-1">
-            Formulated for uncompromising clean-label standards across luxury retail and hospitality
+          <p className="text-sm text-charcoal font-medium mt-1">
+            Engineered in Osaka for clean-label standards across luxury retail and hospitality
           </p>
         </div>
 
-        {/* Badge Grid with Staggered Stroke Draw Animation */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
-          {TRUST_BADGES.map((badge, idx) => (
+        {/* 3 Bold Big Number Boxes */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-10">
+          {METRIC_BOXES.map((box, idx) => (
             <motion.div
-              key={badge.title}
+              key={box.metric}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: idx * 0.12, ease: "easeOut" }}
-              className="group flex flex-col items-center text-center p-4 rounded-2xl bg-champagne-light/50 border border-gold-champagne/40 hover:border-gold-soft hover:bg-champagne/30 transition-all duration-300"
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.5, delay: idx * 0.12 }}
+              className="p-8 rounded-3xl bg-white border border-gold-champagne/70 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center justify-between group hover:border-gold-soft"
             >
-              {/* Drawn SVG Stroke Icon Badge */}
-              <div className="w-12 h-12 rounded-full bg-white shadow-sm border border-gold-soft/40 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="w-6 h-6 text-crimson group-hover:text-gold-antique transition-colors"
-                >
-                  <motion.path
-                    d={badge.iconPath}
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    initial={{ pathLength: 0 }}
-                    whileInView={{ pathLength: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1.2, delay: idx * 0.15 + 0.2 }}
-                  />
-                  {badge.secondaryPath && (
-                    <motion.path
-                      d={badge.secondaryPath}
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      initial={{ pathLength: 0 }}
-                      whileInView={{ pathLength: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: idx * 0.15 + 0.5 }}
-                    />
-                  )}
-                </svg>
+              <div>
+                <span className="font-serif text-4xl sm:text-5xl font-extrabold text-richBlack block tracking-tight group-hover:text-crimson transition-colors">
+                  {box.metric}
+                </span>
+                <span className="text-xs font-mono uppercase tracking-wider text-gold-antique font-bold block mt-2">
+                  {box.subtitle}
+                </span>
+                <h3 className="font-serif font-bold text-lg text-richBlack mt-1">
+                  {box.title}
+                </h3>
               </div>
-
-              {/* Title & Subtitles */}
-              <h3 className="font-serif font-bold text-richBlack text-sm sm:text-base group-hover:text-crimson transition-colors">
-                {badge.title}
-              </h3>
-              <span className="text-[11px] font-mono font-semibold text-gold-antique mt-0.5">
-                {badge.subtitle}
-              </span>
-              <p className="text-[11px] text-charcoal/70 mt-1 leading-snug">
-                {badge.detail}
+              <p className="text-xs text-charcoal/80 mt-3 leading-relaxed">
+                {box.detail}
               </p>
             </motion.div>
           ))}
         </div>
+
+        {/* Certification Logos & Verification Bar */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-champagne-light/70 border border-gold-champagne/60 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs font-sans font-medium text-richBlack">
+          <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-full bg-leafGreen/15 border border-leafGreen/40 flex items-center justify-center">
+              <Leaf className="w-4 h-4 text-leafGreen" />
+            </div>
+            <span><strong>Certified Vegan</strong> (100% Plant Sourced)</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-full bg-gold-antique/15 border border-gold-antique/40 flex items-center justify-center">
+              <Award className="w-4 h-4 text-gold-antique" />
+            </div>
+            <span><strong>ISO 22000 & HACCP</strong> Certified Facility</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-full bg-crimson/15 border border-crimson/40 flex items-center justify-center">
+              <ShieldCheck className="w-4 h-4 text-crimson" />
+            </div>
+            <span><strong>Non-GMO</strong> • Clean Label Formulation</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-full bg-richBlack/10 border border-richBlack/20 flex items-center justify-center">
+              <CheckCircle2 className="w-4 h-4 text-richBlack" />
+            </div>
+            <span><strong>100% Recyclable</strong> Aluminum Slim Cans</span>
+          </div>
+        </div>
+
       </div>
     </section>
   );
 };
-

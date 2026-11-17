@@ -20,10 +20,10 @@ interface FeatureCallout {
 const FEATURES: FeatureCallout[] = [
   {
     id: "vegan-collagen",
-    title: "Bio-Fermented Vegan Collagen",
-    lead: "2,500mg Japan-Engineered Peptides",
+    title: "Bio-Fermented Plant Collagen",
+    lead: "2,500mg Peptides • Made in Osaka",
     description:
-      "Synthesized via pharmaceutical plant-fermentation biotechnology in Osaka. Replicates the human Type I & III collagen amino matrix with zero animal waste, zero marine byproducts, and zero fishy odor.",
+      "Produced via plant fermentation in Osaka, Japan. Matches human Type I & III collagen amino acid ratios with zero animal or marine sourcing.",
     icon: <Leaf className="w-5 h-5 text-leafGreen" />,
     position: "top-left",
     linePath: "M 310 160 C 400 160, 420 250, 460 260",
@@ -31,29 +31,29 @@ const FEATURES: FeatureCallout[] = [
   {
     id: "monk-fruit",
     title: "Monk Fruit Sweetener",
-    lead: "Standardized Mogroside V Extract",
+    lead: "Pure Luo Han Guo Extract",
     description:
-      "Sweetened exclusively with rare organic Luo Han Guo extract. Imparts a luxurious, rounded fruit mouthfeel with zero glycemic index, zero insulin spike, and none of the metallic bitterness of stevia.",
+      "Sweetened exclusively with natural organic monk fruit extract. Smooth, rounded sweetness with zero sugar and zero synthetic additives.",
     icon: <Sparkles className="w-5 h-5 text-gold-antique" />,
     position: "bottom-left",
     linePath: "M 310 480 C 400 480, 420 380, 460 360",
   },
   {
     id: "zero-sugar",
-    title: "Absolute Zero Sugar",
-    lead: "0g Sugar • Fasting & Keto Safe",
+    title: "Zero Sugar",
+    lead: "0g Sugar • Clean Nutrition",
     description:
-      "Zero cane sugar, zero corn syrups, and zero disguised fruit concentrates. Fits seamlessly into intermittent fasting windows, diabetic diets, and metabolic longevity regimens.",
+      "Zero cane sugar, zero corn syrups, and zero fruit concentrates. Clean hydration suitable for diabetic, keto, and wellness-focused consumers.",
     icon: <Ban className="w-5 h-5 text-crimson" />,
     position: "top-right",
     linePath: "M 690 160 C 600 160, 580 250, 540 260",
   },
   {
     id: "low-calories",
-    title: "Ultra Low Calorie Hydration",
+    title: "Ultra Low Calorie",
     lead: "Under 15 kcal per 250ml Can",
     description:
-      "Engineered as a clean daily beauty ritual. Delivers concentrated glycine, proline, and hydroxyproline precursors without packing on unwanted carbohydrates or calories.",
+      "Light functional beverage providing 2,500mg bio-peptides and 100% daily Vitamin C with under 15 calories per serving.",
     icon: <Flame className="w-5 h-5 text-amber-600" />,
     position: "bottom-right",
     linePath: "M 690 480 C 600 480, 580 380, 540 360",
@@ -81,7 +81,7 @@ export const WhyCollaviah: React.FC = () => {
             Why COLLAVIAH Leads the Category
           </h2>
           <p className="text-charcoal text-sm sm:text-base mt-3 leading-relaxed">
-            Every element inside our 250ml slim can was engineered to redefine functional beauty beverages—bridging pure Japanese biotechnology with clean-label transparency. Click any callout to explore the science.
+            Made in Osaka, Japan. 2,500mg plant collagen peptides formulated in 250ml slim cans with zero sugar and pure monk fruit sweetener. Available in cartons of 6, 12, and 24, with 18-month ambient shelf life and international export compliance.
           </p>
         </div>
 

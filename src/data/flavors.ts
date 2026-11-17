@@ -6,7 +6,7 @@ export const FLAVORS: Flavor[] = [
     name: "Strawberry Lime",
     tagline: "Sun-ripened strawberry meets zesty Japanese sudachi-lime freshness",
     shortDescription:
-      "A delicate balance of sweet alpine strawberry notes and crisp lime zest, formulated with Japan-based vegan collagen for an effervescent daily beauty ritual.",
+      "A delicate balance of sweet alpine strawberry notes and crisp lime zest, formulated with bio-fermented vegan collagen made in Osaka for clean daily hydration.",
     fullDescription:
       "Crafted for modern discerning palates, our Strawberry Lime formulation marries the lush aroma of ripe strawberries with the invigorating tang of fresh lime. Sweetened exclusively with organic monk fruit extract, it offers pure, vibrant refreshment with zero sugar and ultra-low calories.",
     tastingNotes: [
@@ -15,11 +15,11 @@ export const FLAVORS: Flavor[] = [
       "Finish: Silky, clean botanical bloom with zero linger",
     ],
     keyBotanicals: [
-      "Japan-based fermented vegan collagen peptides",
+      "Bio-fermented vegan collagen peptides (Made in Osaka)",
       "Vitamin C (Antioxidant & Collagen Synergist)",
       "Cold-pressed lime oil",
       "Natural strawberry botanical extract",
-      "Zero-glycemic Monk Fruit extract",
+      "Organic Monk Fruit extract",
     ],
     volume: "250 ml (Slim Can)",
     color: {
@@ -44,7 +44,7 @@ export const FLAVORS: Flavor[] = [
     },
     ingredients: [
       "Sparkling Alpine Spring Water",
-      "Japan-based Vegan Collagen Peptide Complex (Fermented Plant Peptides)",
+      "Osaka Bio-Fermented Vegan Collagen Peptide Complex",
       "Vitamin C (Ascorbic Acid)",
       "Natural Strawberry Extract",
       "Lime Juice Concentrate",
@@ -65,7 +65,7 @@ export const FLAVORS: Flavor[] = [
     name: "Lemon Lime",
     tagline: "Zesty sun-kissed lemon meets crisp Japanese yuzu-lime effervescence",
     shortDescription:
-      "A radiant, citrus-forward formulation pairing bright lemon zest with cool lime freshness, powered by Japan-based vegan collagen for a sparkling daily beauty ritual.",
+      "A radiant, citrus-forward formulation pairing bright lemon zest with cool lime freshness, powered by bio-fermented vegan collagen made in Osaka.",
     fullDescription:
       "Crafted for discerning palates that crave vibrant citrus clarity, our Lemon Lime formulation unites the sunlit brightness of cold-pressed lemon with the invigorating freshness of Japanese yuzu-lime. Sweetened exclusively with organic monk fruit extract, it delivers a clean, effervescent lift with zero sugar and ultra-low calories.",
     tastingNotes: [
@@ -74,11 +74,11 @@ export const FLAVORS: Flavor[] = [
       "Finish: Silky, clean citrus bloom with zero linger",
     ],
     keyBotanicals: [
-      "Japan-based fermented vegan collagen peptides",
+      "Bio-fermented vegan collagen peptides (Made in Osaka)",
       "Vitamin C (Antioxidant & Collagen Synergist)",
       "Cold-pressed lemon oil & yuzu extract",
       "Natural lime juice concentrate",
-      "Zero-glycemic Monk Fruit extract",
+      "Organic Monk Fruit extract",
     ],
     volume: "250 ml (Slim Can)",
     color: {
@@ -103,7 +103,7 @@ export const FLAVORS: Flavor[] = [
     },
     ingredients: [
       "Sparkling Alpine Spring Water",
-      "Japan-based Vegan Collagen Peptide Complex (Fermented Plant Peptides)",
+      "Osaka Bio-Fermented Vegan Collagen Peptide Complex",
       "Vitamin C (Ascorbic Acid)",
       "Natural Lemon Extract & Cold-Pressed Lemon Oil",
       "Yuzu Lime Juice Concentrate",
@@ -123,44 +123,33 @@ export const FLAVORS: Flavor[] = [
 
 export const BRAND_CLAIMS = [
   {
-    title: "Japan-Based Vegan Collagen",
-    subtitle: "Patented Bio-Fermentation",
-    description: "Type 1 & 3 peptide mimetic engineered via Japanese plant-fermentation biotechnology.",
+    title: "2,500mg Plant Collagen",
+    subtitle: "Made in Osaka, Japan",
+    description: "Bio-fermented plant collagen peptides matching Type I & III amino acid profiles.",
     icon: "sparkles",
+    metric: "2,500mg",
   },
   {
-    title: "Zero Sugar",
-    subtitle: "0g Glycemic Load",
-    description: "Pure botanical sweetness without insulin spikes or sugar crashes.",
+    title: "0g Sugar",
+    subtitle: "Monk Fruit Sweetened",
+    description: "Sweetened exclusively with organic Luo Han Guo extract. Clean taste with zero sugar.",
     icon: "shield-check",
+    metric: "0g",
   },
   {
-    title: "Monk Fruit Sweetener",
-    subtitle: "Luo Han Guo Pure Extract",
-    description: "Rare Mogroside-V extract delivering rounded mouthfeel with zero lingering bitterness.",
-    icon: "leaf",
-  },
-  {
-    title: "Low Calories",
-    subtitle: "< 15 kcal per 250ml Can",
-    description: "Guilt-free functional hydration that fits seamlessly into low-carb and keto lifestyles.",
+    title: "< 15 kcal per Can",
+    subtitle: "Clean Daily Hydration",
+    description: "Light botanical effervescence suited for retail shelves, cafes, and hospitality menus.",
     icon: "flame",
-  },
-  {
-    title: "250 ml Sleek Can",
-    subtitle: "Infinite Recyclability",
-    description: "Premium matte-touch aluminum slim can preserving carbonation and light-sensitive peptides.",
-    icon: "droplet",
+    metric: "< 15 kcal",
   },
 ];
 
 export const REGULATORY_COMPLIANCE_NOTES = {
-  // TODO: Insert local regulatory registration / FSSAI License Number upon market rollout
-  fssaiLicense: "TODO: FSSAI Lic. No. [Pending Allocation for India / Regional FDA]",
-  // TODO: Insert exact batch expiry protocol and storage temperature recommendations
+  complianceCertifications: "ISO 22000 & HACCP Certified • Global Export Compliant",
   shelfLife: "18 Months from date of manufacture when stored in cool, dry conditions away from direct sunlight.",
   storageRecommendation: "Store between 4°C - 22°C. Best served chilled (6°C - 8°C).",
   allergens: "Contains zero common allergens (Gluten-free, Soy-free, Dairy-free, Nut-free).",
-  manufactureOrigin: "Formulated in Osaka, Japan. Packaged under aseptic sterile canning protocols.",
+  manufactureOrigin: "Formulated and canned in Osaka, Japan under sterile aseptic canning protocols.",
 };
 

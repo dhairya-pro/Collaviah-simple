@@ -12,12 +12,12 @@ import { QuoteDrawer } from "@/components/common/QuoteDrawer";
 import { QuoteProvider } from "@/context/QuoteContext";
 
 export const metadata: Metadata = {
-  title: "COLLAVIAH | Premium Japan-Based Vegan Collagen Beverage (250ml Wholesale)",
+  title: "COLLAVIAH | Vegan Collagen Beverage Made in Osaka (250ml Wholesale)",
   description:
-    "Official B2B wholesale portal for COLLAVIAH. Premium Japan-based vegan collagen beverage in 250ml slim cans. Zero sugar, monk fruit sweetener, low calories. Wholesale packs of 6, 12, and 24 for retailers, cafes, gyms, salons, hotels, and distributors.",
+    "Official B2B wholesale portal for COLLAVIAH. Premium vegan collagen beverage made in Osaka, Japan in 250ml slim cans. Zero sugar, monk fruit sweetener, low calories. Wholesale packs of 6, 12, and 24 for retailers, cafes, gyms, salons, hotels, and distributors.",
   keywords: [
     "vegan collagen beverage",
-    "Japan vegan collagen",
+    "Made in Osaka vegan collagen",
     "wholesale collagen drink",
     "B2B beverage supplier",
     "zero sugar functional drink",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "COLLAVIAH Japan Beverage Co." }],
   openGraph: {
-    title: "COLLAVIAH | Premium Japan-Based Vegan Collagen Beverage",
+    title: "COLLAVIAH | Vegan Collagen Beverage Made in Osaka",
     description:
-      "Nourish • Rejuvenate • Glow. Official wholesale packs for commercial stockists, retailers, and hospitality.",
+      "Official wholesale packs for commercial stockists, retailers, and hospitality. Made in Osaka, Japan.",
     type: "website",
     locale: "en_US",
     siteName: "COLLAVIAH Wholesale",
@@ -45,7 +45,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "COLLAVIAH",
-    description: "Premium Japan-based vegan collagen functional beverages for B2B commercial wholesale.",
+    description: "Premium vegan collagen functional beverages made in Osaka for B2B commercial wholesale.",
     url: "https://collaviah.com",
     logo: "https://collaviah.com/images/collaviah-logo.svg",
     knowsAbout: [
